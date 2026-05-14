@@ -762,15 +762,17 @@ body {
 }
 
 .guru-card-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--vp-c-text-1);
-  letter-spacing: -0.02em;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--vp-c-text-3);
+  letter-spacing: 0;
 }
 
 .guru-card-role {
-  font-size: 11px;
-  color: var(--vp-c-text-3);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  letter-spacing: -0.01em;
 }
 
 .guru-card-quote {
@@ -1341,7 +1343,7 @@ body {
 }
 
 .guru-name {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--vp-c-text-1);
 }
