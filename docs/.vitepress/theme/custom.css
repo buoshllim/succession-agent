@@ -414,6 +414,48 @@ body {
   color: var(--vp-c-text-3);
 }
 
+/* ── succession-agent 포지션 카드 (stock-* 클래스 대체) ── */
+.position-grid-home {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .position-grid-home { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 480px) {
+  .position-grid-home { grid-template-columns: repeat(2, 1fr); }
+}
+
+.position-card-home {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg);
+  text-decoration: none !important;
+  transition: all 0.18s ease;
+}
+.position-card-home:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 16px rgba(0, 100, 255, 0.1);
+  transform: translateY(-1px);
+}
+.position-card-home .position-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  letter-spacing: -0.02em;
+}
+.position-card-home .position-sub {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--vp-c-text-3);
+}
+
 /* ── 날짜별 분석 리스트 ── */
 /* ── 전체 분석 이력 테이블 ── */
 .history-table-wrap {

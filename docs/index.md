@@ -12,46 +12,46 @@ sidebar: false
   <div class="section-header">
     <span class="section-label">포지션별 심의 현황</span>
   </div>
-  <div class="stock-grid-home">
-    <a href="/succession/cio" class="stock-card-home">
-      <span class="stock-name">CIO</span>
-      <span class="stock-ticker">최고투자책임자</span>
+  <div class="position-grid-home">
+    <a href="/succession/cio" class="position-card-home">
+      <span class="position-name">CIO</span>
+      <span class="position-sub">최고투자책임자</span>
     </a>
-    <a href="/succession/md" class="stock-card-home">
-      <span class="stock-name">MD</span>
-      <span class="stock-ticker">투자담당</span>
+    <a href="/succession/md" class="position-card-home">
+      <span class="position-name">MD</span>
+      <span class="position-sub">투자담당</span>
     </a>
-    <a href="/succession/cfo" class="stock-card-home">
-      <span class="stock-name">CFO</span>
-      <span class="stock-ticker">최고재무책임자</span>
+    <a href="/succession/cfo" class="position-card-home">
+      <span class="position-name">CFO</span>
+      <span class="position-sub">최고재무책임자</span>
     </a>
-    <a href="/succession/caio" class="stock-card-home">
-      <span class="stock-name">CAIO</span>
-      <span class="stock-ticker">최고AI책임자</span>
+    <a href="/succession/caio" class="position-card-home">
+      <span class="position-name">CAIO</span>
+      <span class="position-sub">최고AI책임자</span>
     </a>
-    <a href="/succession/aidt" class="stock-card-home">
-      <span class="stock-name">AI/DT</span>
-      <span class="stock-ticker">AI/DT 담당</span>
+    <a href="/succession/aidt" class="position-card-home">
+      <span class="position-name">AI/DT</span>
+      <span class="position-sub">AI/DT 담당</span>
     </a>
-    <a href="/succession/ciso" class="stock-card-home">
-      <span class="stock-name">CISO</span>
-      <span class="stock-ticker">정보보호담당</span>
+    <a href="/succession/ciso" class="position-card-home">
+      <span class="position-name">CISO</span>
+      <span class="position-sub">정보보호담당</span>
     </a>
-    <a href="/succession/chro" class="stock-card-home">
-      <span class="stock-name">CHRO</span>
-      <span class="stock-ticker">최고인사책임자</span>
+    <a href="/succession/chro" class="position-card-home">
+      <span class="position-name">CHRO</span>
+      <span class="position-sub">최고인사책임자</span>
     </a>
-    <a href="/succession/cso" class="stock-card-home">
-      <span class="stock-name">CSO</span>
-      <span class="stock-ticker">최고전략책임자</span>
+    <a href="/succession/cso" class="position-card-home">
+      <span class="position-name">CSO</span>
+      <span class="position-sub">최고전략책임자</span>
     </a>
-    <a href="/succession/clo" class="stock-card-home">
-      <span class="stock-name">CLO</span>
-      <span class="stock-ticker">최고법무책임자</span>
+    <a href="/succession/clo" class="position-card-home">
+      <span class="position-name">CLO</span>
+      <span class="position-sub">최고법무책임자</span>
     </a>
-    <a href="/succession/ciro" class="stock-card-home">
-      <span class="stock-name">CIRO</span>
-      <span class="stock-ticker">최고IR책임자</span>
+    <a href="/succession/ciro" class="position-card-home">
+      <span class="position-name">CIRO</span>
+      <span class="position-sub">최고IR책임자</span>
     </a>
   </div>
 </div>
