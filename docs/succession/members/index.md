@@ -70,12 +70,12 @@ aside: false
     </div>
   </a>
 
-  <a href="/succession/members/strategy-thiel" class="guru-card">
-    <img src="/board/strategy-thiel.png" class="guru-card-avatar" alt="Peter Thiel" />
+  <a href="/succession/members/innovation-wood" class="guru-card">
+    <img src="/board/innovation-wood.png" class="guru-card-avatar" alt="Cathie Wood" />
     <div class="guru-card-body">
-      <div class="guru-card-name">Peter Thiel</div>
-      <div class="guru-card-role">Strategy · Edge</div>
-      <div class="guru-card-quote">"경쟁은 패자들의 것이다"</div>
+      <div class="guru-card-name">Cathie Wood</div>
+      <div class="guru-card-role">Innovation · Future</div>
+      <div class="guru-card-quote">"혁신은 변곡점을 먼저 보는 것"</div>
     </div>
   </a>
 

@@ -92,12 +92,12 @@ const PHASES = [
   {
     id: 'ma', label: 'M&A 통합기', color: '#F59E0B',
     desc: 'M&A 이후 조직 통합. 문화 통합력과 신뢰 기반 리더십이 핵심이다.',
-    adjust: { 'transform-nadella': +0.03, 'integrity-buffett': +0.02, 'strategy-thiel': -0.03, 'vision-jensen': -0.02 }
+    adjust: { 'transform-nadella': +0.03, 'integrity-buffett': +0.02, 'execution-musk': -0.03, 'vision-jensen': -0.02 }
   },
   {
     id: 'new-biz', label: '신사업 개척기', color: '#10B981',
     desc: '새로운 시장 진입 또는 사업 모델 혁신. 전략적 차별화와 기술 비전이 중요하다.',
-    adjust: { 'strategy-thiel': +0.03, 'vision-jensen': +0.02, 'performance-welch': -0.03, 'scale-bezos': -0.02 }
+    adjust: { 'innovation-wood': +0.03, 'vision-jensen': +0.02, 'performance-welch': -0.03, 'scale-bezos': -0.02 }
   },
   {
     id: 'efficiency', label: '비용 효율화기', color: '#EF4444',
@@ -107,7 +107,7 @@ const PHASES = [
   {
     id: 'crisis', label: '위기 관리기', color: '#8B5CF6',
     desc: '경영 위기 또는 외부 충격 대응. 리스크 관리와 역발상적 판단이 최우선이다.',
-    adjust: { 'principles-dalio': +0.03, 'contraverse-munger': +0.02, 'scale-bezos': -0.02, 'strategy-thiel': -0.03 }
+    adjust: { 'principles-dalio': +0.03, 'contraverse-munger': +0.02, 'scale-bezos': -0.02, 'execution-musk': -0.03 }
   },
 ]
 
@@ -131,7 +131,7 @@ const BASE_WEIGHTS: Record<string, Record<string, number>> = {
   'integrity-buffett':  { CIO:0.17, MD:0.22, CFO:0.25, CAIO:0.05, AIDT:0.05, CISO:0.15, CHRO:0.12, CSO:0.10, CLO:0.15, CIRO:0.25 },
   'principles-dalio':   { CIO:0.15, MD:0.18, CFO:0.20, CAIO:0.08, AIDT:0.07, CISO:0.25, CHRO:0.10, CSO:0.15, CLO:0.28, CIRO:0.15 },
   'transform-nadella':  { CIO:0.10, MD:0.05, CFO:0.05, CAIO:0.15, AIDT:0.18, CISO:0.05, CHRO:0.28, CSO:0.07, CLO:0.05, CIRO:0.07 },
-  'strategy-thiel':     { CIO:0.08, MD:0.07, CFO:0.07, CAIO:0.20, AIDT:0.10, CISO:0.08, CHRO:0.00, CSO:0.25, CLO:0.00, CIRO:0.08 },
+  'innovation-wood':    { CIO:0.12, MD:0.08, CFO:0.00, CAIO:0.18, AIDT:0.15, CISO:0.00, CHRO:0.00, CSO:0.15, CLO:0.00, CIRO:0.08 },
   'performance-welch':  { CIO:0.05, MD:0.10, CFO:0.07, CAIO:0.05, AIDT:0.05, CISO:0.10, CHRO:0.22, CSO:0.02, CLO:0.07, CIRO:0.05 },
   'contraverse-munger': { CIO:0.03, MD:0.08, CFO:0.15, CAIO:0.03, AIDT:0.05, CISO:0.22, CHRO:0.04, CSO:0.03, CLO:0.25, CIRO:0.08 },
   'execution-musk':     { CIO:0.00, MD:0.00, CFO:0.00, CAIO:0.22, AIDT:0.20, CISO:0.00, CHRO:0.00, CSO:0.05, CLO:0.00, CIRO:0.00 },
@@ -143,7 +143,7 @@ const BOARD_META: Record<string, { name: string; color: string }> = {
   'integrity-buffett':  { name: 'Integrity · Buffett', color: '#2563EB' },
   'principles-dalio':   { name: 'Principles · Dalio', color: '#475569' },
   'transform-nadella':  { name: 'Transform · Nadella', color: '#00A4EF' },
-  'strategy-thiel':     { name: 'Strategy · Thiel',   color: '#0891B2' },
+  'innovation-wood':    { name: 'Innovation · Wood',   color: '#7C3AED' },
   'performance-welch':  { name: 'Performance · Welch', color: '#059669' },
   'contraverse-munger': { name: 'Contraverse · Munger', color: '#D97706' },
   'execution-musk':     { name: 'Execution · Musk',   color: '#DC2626' },

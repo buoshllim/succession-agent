@@ -54,7 +54,7 @@ description: 승계 이사회 오케스트레이터. "승계 심의", "이사회
 [Integrity 그룹]  board-integrity-buffett
 [Principles 그룹] board-principles-dalio
 [Transform 그룹]  board-transform-nadella
-[Strategy 그룹]   board-strategy-thiel
+[Innovation 그룹] board-innovation-wood
 [Performance 그룹] board-performance-welch
 [Contraverse 그룹] board-contraverse-munger
 [Execution 그룹]  board-execution-musk      ← 가중치 0.00이면 제외
@@ -108,7 +108,7 @@ TeamCreate(
   members=["ceo-jk"] + 가중치 0.00 제외한 활성 이사 목록
   // 예시 (CIO): ["ceo-jk", "board-vision-jensen", "board-scale-bezos",
   //              "board-integrity-buffett", "board-principles-dalio",
-  //              "board-transform-nadella", "board-strategy-thiel",
+  //              "board-transform-nadella", "board-innovation-wood",
   //              "board-performance-welch", "board-contraverse-munger",
   // 예시 (CAIO): 위 + "board-execution-musk"
 )

@@ -122,7 +122,7 @@ export default defineConfig({
             { text: 'Warren Buffett', link: '/succession/members/integrity-buffett' },
             { text: 'Ray Dalio',    link: '/succession/members/principles-dalio' },
             { text: 'Satya Nadella', link: '/succession/members/transform-nadella' },
-            { text: 'Peter Thiel',  link: '/succession/members/strategy-thiel' },
+            { text: 'Cathie Wood',   link: '/succession/members/innovation-wood' },
             { text: 'Jack Welch',   link: '/succession/members/performance-welch' },
             { text: 'Charlie Munger', link: '/succession/members/contraverse-munger' },
             { text: 'Elon Musk',     link: '/succession/members/execution-musk' },
