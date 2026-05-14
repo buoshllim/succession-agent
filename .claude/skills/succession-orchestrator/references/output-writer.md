@@ -42,7 +42,7 @@ debate 파일:
 ```markdown
 ## {후보자명} → {포지션} — 승계 이사회 ({YYYY-MM-DD})
 
-> **{준비도 이모지} {준비도 단계}** | 준비도 {X}% | 9명 중 {N}명 동방향
+> **{준비도 이모지} {준비도 단계}** | 준비도 {X}% | 활성 이사 중 {N}명 동방향
 ```
 
 준비도 이모지: 🟢 Ready Now / 🟡 Ready in 2Y / 🔴 Not Ready
@@ -154,7 +154,7 @@ const debate = {
   ],
   finalReadiness: "🟢 Ready Now",  // 또는 🟡 Ready in 2Y / 🔴 Not Ready
   readinessScore: 0.72,            // 준비도 점수 (0.00~1.00)
-  dissension: "9명 중 7명 동방향",
+  dissension: "활성 이사 중 N명 동방향",
   rationale: [
     "첫 번째 근거 문장.",
     "두 번째 근거 문장.",

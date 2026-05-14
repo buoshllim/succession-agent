@@ -20,7 +20,7 @@ aside: false
 </div>
 
 <div class="board-divider">
-  <span class="board-divider-label">에이전트 이사 (9인)</span>
+  <span class="board-divider-label">에이전트 이사 (11인)</span>
 </div>
 
 <div class="guru-grid">

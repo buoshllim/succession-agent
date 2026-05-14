@@ -95,7 +95,7 @@ export default defineConfig({
           ]
         },
         {
-          text: '에이전트 이사 (9인)',
+          text: '에이전트 이사 (11인)',
           items: [
             { text: 'Jensen Huang', link: '/succession/members/vision-jensen' },
             { text: 'Jeff Bezos',   link: '/succession/members/scale-bezos' },
