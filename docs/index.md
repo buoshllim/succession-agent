@@ -69,7 +69,7 @@ sidebar: false
     <a href="/succession/members/" class="board-hero-card board-hero-card--secondary">
       <span class="board-hero-icon">👥</span>
       <div class="board-hero-body">
-        <div class="board-hero-title">이사회 위원</div>
+        <div class="board-hero-title">이사회 멤버</div>
       </div>
       <span class="board-hero-arrow">→</span>
     </a>

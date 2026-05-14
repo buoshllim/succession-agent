@@ -18,10 +18,10 @@ export default defineConfig({
         ]
       },
       {
-        text: '이사회',
+        text: '에이전트 이사회',
         items: [
           { text: '🏛️ 이사회 현황', link: '/succession/board/' },
-          { text: '👥 이사회 위원', link: '/succession/members/' },
+          { text: '👥 이사회 멤버', link: '/succession/members/' },
         ]
       },
     ],
@@ -40,10 +40,10 @@ export default defineConfig({
       ],
       '/succession/board/': [
         {
-          text: '이사회',
+          text: '에이전트 이사회',
           items: [
             { text: '🏛️ 이사회 현황', link: '/succession/board/' },
-            { text: '👥 이사회 위원', link: '/succession/members/' },
+            { text: '👥 이사회 멤버', link: '/succession/members/' },
           ]
         }
       ],
