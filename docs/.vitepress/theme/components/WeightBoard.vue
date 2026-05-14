@@ -248,7 +248,7 @@ function setPhase(id: string) {
 .wb-phase-badge {
   padding: 3px 10px;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -284,9 +284,9 @@ function setPhase(id: string) {
 }
 .wb-pos-tabs::-webkit-scrollbar { display: none; }
 .wb-pos-btn {
-  padding: 6px 12px;
+  padding: 5px 9px;
   border-radius: 8px 8px 0 0;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   border: 1px solid transparent;
   border-bottom: none;
@@ -406,6 +406,6 @@ function setPhase(id: string) {
   .wb-bar-row { grid-template-columns: 140px 1fr 52px; gap: 8px; }
   .wb-name { font-size: 11px; }
   .wb-rank-badge { display: none; }
-  .wb-pos-btn { padding: 5px 10px; font-size: 12px; }
+  .wb-pos-btn { padding: 5px 10px; font-size: 11px; }
 }
 </style>
