@@ -87,7 +87,7 @@ const PHASES = [
   {
     id: 'ai-dt', label: 'AI/DT 전환기', color: '#6366F1',
     desc: 'AI와 디지털 전환이 핵심 과제. 기술 이해력과 변화 적응 속도를 우선시한다.',
-    adjust: { 'vision-jensen': +0.03, 'transform-nadella': +0.02, 'foundation-drucker': -0.02, 'performance-welch': -0.03 }
+    adjust: { 'vision-jensen': +0.03, 'transform-nadella': +0.02, 'performance-welch': -0.03, 'contraverse-munger': +0.02 }
   },
   {
     id: 'ma', label: 'M&A 통합기', color: '#F59E0B',
@@ -97,7 +97,7 @@ const PHASES = [
   {
     id: 'new-biz', label: '신사업 개척기', color: '#10B981',
     desc: '새로운 시장 진입 또는 사업 모델 혁신. 전략적 차별화와 기술 비전이 중요하다.',
-    adjust: { 'strategy-thiel': +0.03, 'vision-jensen': +0.02, 'performance-welch': -0.03, 'foundation-drucker': -0.02 }
+    adjust: { 'strategy-thiel': +0.03, 'vision-jensen': +0.02, 'performance-welch': -0.03, 'scale-bezos': -0.02 }
   },
   {
     id: 'efficiency', label: '비용 효율화기', color: '#EF4444',
@@ -134,8 +134,6 @@ const BASE_WEIGHTS: Record<string, Record<string, number>> = {
   'strategy-thiel':     { CIO:0.08, MD:0.07, CFO:0.07, CAIO:0.20, AIDT:0.10, CISO:0.08, CHRO:0.00, CSO:0.25, CLO:0.00, CIRO:0.08 },
   'performance-welch':  { CIO:0.05, MD:0.10, CFO:0.07, CAIO:0.05, AIDT:0.05, CISO:0.10, CHRO:0.22, CSO:0.02, CLO:0.07, CIRO:0.05 },
   'contraverse-munger': { CIO:0.03, MD:0.08, CFO:0.15, CAIO:0.03, AIDT:0.05, CISO:0.22, CHRO:0.04, CSO:0.03, CLO:0.25, CIRO:0.08 },
-  'foundation-drucker': { CIO:0.02, MD:0.03, CFO:0.10, CAIO:0.02, AIDT:0.05, CISO:0.02, CHRO:0.15, CSO:0.00, CLO:0.18, CIRO:0.07 },
-  'innovation-jobs':    { CIO:0.00, MD:0.00, CFO:0.00, CAIO:0.05, AIDT:0.05, CISO:0.00, CHRO:0.00, CSO:0.08, CLO:0.00, CIRO:0.00 },
   'execution-musk':     { CIO:0.00, MD:0.00, CFO:0.00, CAIO:0.22, AIDT:0.20, CISO:0.00, CHRO:0.00, CSO:0.05, CLO:0.00, CIRO:0.00 },
 }
 
@@ -148,8 +146,6 @@ const BOARD_META: Record<string, { name: string; color: string }> = {
   'strategy-thiel':     { name: 'Strategy · Thiel',   color: '#0891B2' },
   'performance-welch':  { name: 'Performance · Welch', color: '#059669' },
   'contraverse-munger': { name: 'Contraverse · Munger', color: '#D97706' },
-  'foundation-drucker': { name: 'Foundation · Drucker', color: '#7C3AED' },
-  'innovation-jobs':    { name: 'Innovation · Jobs',  color: '#EC4899' },
   'execution-musk':     { name: 'Execution · Musk',   color: '#DC2626' },
 }
 

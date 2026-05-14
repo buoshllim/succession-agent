@@ -20,7 +20,7 @@ aside: false
 </div>
 
 <div class="board-divider">
-  <span class="board-divider-label">에이전트 이사 (11인)</span>
+  <span class="board-divider-label">에이전트 이사 (9인)</span>
 </div>
 
 <div class="guru-grid">
@@ -94,24 +94,6 @@ aside: false
       <div class="guru-card-name">Charlie Munger</div>
       <div class="guru-card-role">Contraverse · Bias</div>
       <div class="guru-card-quote">"뒤집어라, 항상 뒤집어라"</div>
-    </div>
-  </a>
-
-  <a href="/succession/members/foundation-drucker" class="guru-card">
-    <img src="/board/foundation-drucker.png" class="guru-card-avatar" alt="Peter Drucker" />
-    <div class="guru-card-body">
-      <div class="guru-card-name">Peter Drucker</div>
-      <div class="guru-card-role">Foundation · Mgmt</div>
-      <div class="guru-card-quote">"경영은 올바른 일을 하는 것"</div>
-    </div>
-  </a>
-
-  <a href="/succession/members/innovation-jobs" class="guru-card">
-    <img src="/board/innovation-jobs.png" class="guru-card-avatar" alt="Steve Jobs" />
-    <div class="guru-card-body">
-      <div class="guru-card-name">Steve Jobs</div>
-      <div class="guru-card-role">Innovation · Design</div>
-      <div class="guru-card-quote">"집중이란 No라고 말하는 것"</div>
     </div>
   </a>
 

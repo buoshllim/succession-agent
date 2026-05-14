@@ -115,7 +115,7 @@ export default defineConfig({
           ]
         },
         {
-          text: '에이전트 이사 (11인)',
+          text: '에이전트 이사 (9인)',
           items: [
             { text: 'Jensen Huang', link: '/succession/members/vision-jensen' },
             { text: 'Jeff Bezos',   link: '/succession/members/scale-bezos' },
@@ -125,8 +125,6 @@ export default defineConfig({
             { text: 'Peter Thiel',  link: '/succession/members/strategy-thiel' },
             { text: 'Jack Welch',   link: '/succession/members/performance-welch' },
             { text: 'Charlie Munger', link: '/succession/members/contraverse-munger' },
-            { text: 'Peter Drucker', link: '/succession/members/foundation-drucker' },
-            { text: 'Steve Jobs',    link: '/succession/members/innovation-jobs' },
             { text: 'Elon Musk',     link: '/succession/members/execution-musk' },
           ]
         }

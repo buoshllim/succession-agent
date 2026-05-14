@@ -171,7 +171,6 @@ const BOARD: Record<string, { name: string; color: string }> = {
   'strategy-thiel':     { name: 'Strategy · Thiel',       color: '#0891B2' },
   'performance-welch':  { name: 'Performance · Welch',    color: '#059669' },
   'contraverse-munger': { name: 'Contraverse · Munger',   color: '#D97706' },
-  'foundation-drucker': { name: 'Foundation · Drucker',   color: '#7C3AED' },
 }
 
 const boardImg   = (b: string) => `/board/${b}.png`
