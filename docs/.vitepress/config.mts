@@ -10,8 +10,8 @@ export default defineConfig({
       {
         text: '포지션별',
         items: [
-          { text: 'CIO (최고투자책임자)', link: '/succession/cio' },
-          { text: 'MD (투자)',            link: '/succession/md' },
+          { text: 'CIO', link: '/succession/cio' },
+          { text: '투자MD',            link: '/succession/md' },
           { text: 'AI혁신담당',            link: '/succession/caio' },
           { text: 'AI/DT담당',             link: '/succession/aidt' },
           { text: '정보보호담당',           link: '/succession/ciso' },
@@ -36,8 +36,8 @@ export default defineConfig({
         {
           text: '포지션별',
           items: [
-            { text: 'CIO (최고투자책임자)', link: '/succession/cio' },
-            { text: 'MD (투자)',            link: '/succession/md' },
+            { text: 'CIO', link: '/succession/cio' },
+            { text: '투자MD',            link: '/succession/md' },
             { text: 'AI혁신담당',            link: '/succession/caio' },
             { text: 'AI/DT담당',             link: '/succession/aidt' },
             { text: '정보보호담당',           link: '/succession/ciso' },
@@ -61,8 +61,8 @@ export default defineConfig({
         {
           text: '포지션별 이사회 기록',
           items: [
-            { text: 'CIO (최고투자책임자)', link: '/succession/debate/cio' },
-            { text: 'MD (투자)',            link: '/succession/debate/md' },
+            { text: 'CIO', link: '/succession/debate/cio' },
+            { text: '투자MD',            link: '/succession/debate/md' },
             { text: 'AI혁신담당',            link: '/succession/debate/caio' },
             { text: 'AI/DT담당',             link: '/succession/debate/aidt' },
             { text: '정보보호담당',           link: '/succession/debate/ciso' },
@@ -85,8 +85,8 @@ export default defineConfig({
         {
           text: '포지션별 이사회 기록',
           items: [
-            { text: 'CIO (최고투자책임자)', link: '/succession/debate/cio' },
-            { text: 'MD (투자)',            link: '/succession/debate/md' },
+            { text: 'CIO', link: '/succession/debate/cio' },
+            { text: '투자MD',            link: '/succession/debate/md' },
             { text: 'AI혁신담당',            link: '/succession/debate/caio' },
             { text: 'AI/DT담당',             link: '/succession/debate/aidt' },
             { text: '정보보호담당',           link: '/succession/debate/ciso' },

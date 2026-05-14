@@ -60,8 +60,8 @@ const { isDark } = useData()
 const open = ref(false)
 
 const positions = [
-  { name: 'CIO',    sub: '최고투자책임자', link: '/succession/cio' },
-  { name: 'MD',     sub: '투자',           link: '/succession/md' },
+  { name: 'CIO',    sub: '', link: '/succession/cio' },
+  { name: '투자MD', sub: '',           link: '/succession/md' },
   { name: 'AI혁신', sub: 'AI혁신담당',     link: '/succession/caio' },
   { name: 'AI/DT',  sub: 'AI/DT담당',     link: '/succession/aidt' },
   { name: '정보보호', sub: '정보보호담당', link: '/succession/ciso' },

@@ -15,11 +15,11 @@ sidebar: false
   <div class="position-grid-home">
     <a href="/succession/cio" class="position-card-home">
       <span class="position-name">CIO</span>
-      <span class="position-sub">최고투자책임자</span>
+      <span class="position-sub">&nbsp;</span>
     </a>
     <a href="/succession/md" class="position-card-home">
-      <span class="position-name">MD</span>
-      <span class="position-sub">투자</span>
+      <span class="position-name">투자MD</span>
+      <span class="position-sub">&nbsp;</span>
     </a>
     <a href="/succession/caio" class="position-card-home">
       <span class="position-name">AI혁신담당</span>

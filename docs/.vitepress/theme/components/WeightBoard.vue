@@ -32,7 +32,7 @@
         class="wb-pos-btn"
         :class="{ active: position === p.id }"
         @click="position = p.id"
-      >{{ p.id }}</button>
+      >{{ p.label }}</button>
     </div>
 
     <!-- ── 포지션 내용 ── -->
@@ -112,8 +112,8 @@ const PHASES = [
 ]
 
 const POSITIONS = [
-  { id: 'CIO',  label: 'CIO (최고투자책임자)', focus: 'AI 기반 투자 의사결정 · 투자 인프라 · 리스크 관리' },
-  { id: 'MD',   label: 'MD (투자)',            focus: '직접 투자 실행 · 포트폴리오 운용 · 딜소싱 · 밸류에이션' },
+  { id: 'CIO',  label: 'CIO', focus: 'AI 기반 투자 의사결정 · 투자 인프라 · 리스크 관리' },
+  { id: 'MD',   label: '투자MD',            focus: '직접 투자 실행 · 포트폴리오 운용 · 딜소싱 · 밸류에이션' },
   { id: 'CAIO', label: 'AI혁신담당',           focus: 'AI 전략 수립 · AI 조직 구축 · 기술-비즈니스 연결' },
   { id: 'AIDT', label: 'AI/DT담당',            focus: 'AI/DT 실행 · 내부 시스템 혁신 · 데이터 전략' },
   { id: 'CISO', label: '정보보호담당',          focus: '사이버 보안 · 정보 보호 체계 · 보안 리스크 관리' },
