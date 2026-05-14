@@ -1,0 +1,404 @@
+<template>
+  <div class="wb-wrap">
+
+    <!-- ── 국면 선택 ── -->
+    <div class="wb-phase-section">
+      <div class="wb-section-label">비즈니스 국면</div>
+      <div class="wb-phase-tabs">
+        <button
+          v-for="p in PHASES" :key="p.id"
+          class="wb-phase-btn"
+          :class="{ active: phase === p.id }"
+          @click="setPhase(p.id)"
+        >{{ p.label }}</button>
+      </div>
+      <div class="wb-phase-desc">
+        <span class="wb-phase-badge" :style="{ background: currentPhase.color + '22', color: currentPhase.color }">
+          {{ currentPhase.label }}
+        </span>
+        <span class="wb-phase-text">{{ currentPhase.desc }}</span>
+      </div>
+      <div class="wb-phase-adjust">
+        <span v-for="(delta, key) in currentPhase.adjust" :key="key" class="wb-adjust-chip" :class="delta > 0 ? 'up' : 'down'">
+          {{ BOARD_NAMES[key] }} {{ delta > 0 ? '▲' : '▼' }}{{ Math.abs(delta * 100).toFixed(0) }}%p
+        </span>
+      </div>
+    </div>
+
+    <!-- ── 포지션 탭 ── -->
+    <div class="wb-pos-tabs">
+      <button
+        v-for="p in POSITIONS" :key="p.id"
+        class="wb-pos-btn"
+        :class="{ active: position === p.id }"
+        @click="position = p.id"
+      >{{ p.id }}</button>
+    </div>
+
+    <!-- ── 포지션 내용 ── -->
+    <div class="wb-pos-panel">
+      <div class="wb-pos-header">
+        <span class="wb-pos-title">{{ currentPosition.label }}</span>
+        <span class="wb-pos-focus">{{ currentPosition.focus }}</span>
+      </div>
+
+      <!-- 이사별 가중치 바 -->
+      <div class="wb-bars">
+        <TransitionGroup name="wb-bar" tag="div" class="wb-bars-inner">
+          <div
+            v-for="item in sortedBoards"
+            :key="item.key"
+            class="wb-bar-row"
+            :class="{ inactive: item.weight === 0, top3: item.rank <= 3 && item.weight > 0 }"
+          >
+            <div class="wb-bar-label">
+              <img :src="`/board/${item.key}.png`" class="wb-avatar" :alt="item.name" />
+              <span class="wb-name">{{ item.name }}</span>
+              <span v-if="item.rank <= 3 && item.weight > 0" class="wb-rank-badge">담당 {{ item.rank }}</span>
+            </div>
+            <div class="wb-bar-track">
+              <div
+                class="wb-bar-fill"
+                :style="{ width: item.weight > 0 ? (item.weight * 100 / maxWeight * 100) + '%' : '0%',
+                          background: item.rank <= 3 && item.weight > 0 ? item.color : '#CBD5E1' }"
+              ></div>
+            </div>
+            <div class="wb-bar-value" :class="{ zero: item.weight === 0 }">
+              <span>{{ item.weight > 0 ? (item.weight * 100).toFixed(0) + '%' : '—' }}</span>
+              <span v-if="item.delta !== 0" class="wb-delta" :class="item.delta > 0 ? 'up' : 'down'">
+                {{ item.delta > 0 ? '▲' : '▼' }}{{ Math.abs(item.delta * 100).toFixed(0) }}
+              </span>
+            </div>
+          </div>
+        </TransitionGroup>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref, computed } from 'vue'
+
+const phase    = ref('ai-dt')
+const position = ref('CIO')
+
+const PHASES = [
+  {
+    id: 'ai-dt', label: 'AI/DT 전환기', color: '#6366F1',
+    desc: 'AI와 디지털 전환이 핵심 과제. 기술 이해력과 변화 적응 속도를 우선시한다.',
+    adjust: { 'vision-jensen': +0.03, 'transform-nadella': +0.02, 'foundation-drucker': -0.02, 'performance-welch': -0.03 }
+  },
+  {
+    id: 'ma', label: 'M&A 통합기', color: '#F59E0B',
+    desc: 'M&A 이후 조직 통합. 문화 통합력과 신뢰 기반 리더십이 핵심이다.',
+    adjust: { 'transform-nadella': +0.03, 'integrity-buffett': +0.02, 'strategy-thiel': -0.03, 'vision-jensen': -0.02 }
+  },
+  {
+    id: 'new-biz', label: '신사업 개척기', color: '#10B981',
+    desc: '새로운 시장 진입 또는 사업 모델 혁신. 전략적 차별화와 기술 비전이 중요하다.',
+    adjust: { 'strategy-thiel': +0.03, 'vision-jensen': +0.02, 'performance-welch': -0.03, 'foundation-drucker': -0.02 }
+  },
+  {
+    id: 'efficiency', label: '비용 효율화기', color: '#EF4444',
+    desc: '수익성 개선과 운영 효율화. 성과 중심 관리와 원칙 기반 의사결정이 핵심이다.',
+    adjust: { 'performance-welch': +0.03, 'principles-dalio': +0.02, 'vision-jensen': -0.03, 'scale-bezos': -0.02 }
+  },
+  {
+    id: 'crisis', label: '위기 관리기', color: '#8B5CF6',
+    desc: '경영 위기 또는 외부 충격 대응. 리스크 관리와 역발상적 판단이 최우선이다.',
+    adjust: { 'principles-dalio': +0.03, 'contraverse-munger': +0.02, 'scale-bezos': -0.02, 'strategy-thiel': -0.03 }
+  },
+]
+
+const POSITIONS = [
+  { id: 'CIO',  label: 'CIO (최고투자책임자)',  focus: 'AI 기반 투자 의사결정 · 투자 인프라 · 리스크 관리' },
+  { id: 'CFO',  label: 'CFO (최고재무책임자)',  focus: '재무 전략 · 자본 배분 · 투자자 관계' },
+  { id: 'CAIO', label: 'CAIO (최고AI책임자)',   focus: 'AI 전략 수립 · AI 조직 구축 · 기술-비즈니스 연결' },
+  { id: 'CHRO', label: 'CHRO (최고인사책임자)', focus: '인재 전략 · 조직 문화 · 리더십 개발' },
+  { id: 'CSO',  label: 'CSO (최고전략책임자)',  focus: '중장기 전략 · 시장 분석 · M&A · 신사업' },
+  { id: 'CLO',  label: 'CLO (최고법무책임자)',  focus: '법무 리스크 · 컴플라이언스 · 지배구조' },
+]
+
+const BASE_WEIGHTS: Record<string, Record<string, number>> = {
+  'vision-jensen':      { CIO: 0.22, CFO: 0.00, CAIO: 0.30, CHRO: 0.02, CSO: 0.18, CLO: 0.00 },
+  'scale-bezos':        { CIO: 0.18, CFO: 0.10, CAIO: 0.12, CHRO: 0.07, CSO: 0.20, CLO: 0.02 },
+  'integrity-buffett':  { CIO: 0.17, CFO: 0.25, CAIO: 0.05, CHRO: 0.12, CSO: 0.10, CLO: 0.15 },
+  'principles-dalio':   { CIO: 0.15, CFO: 0.20, CAIO: 0.08, CHRO: 0.10, CSO: 0.15, CLO: 0.28 },
+  'transform-nadella':  { CIO: 0.10, CFO: 0.05, CAIO: 0.15, CHRO: 0.28, CSO: 0.07, CLO: 0.05 },
+  'strategy-thiel':     { CIO: 0.08, CFO: 0.07, CAIO: 0.20, CHRO: 0.00, CSO: 0.25, CLO: 0.00 },
+  'performance-welch':  { CIO: 0.05, CFO: 0.07, CAIO: 0.05, CHRO: 0.22, CSO: 0.02, CLO: 0.07 },
+  'contraverse-munger': { CIO: 0.03, CFO: 0.15, CAIO: 0.03, CHRO: 0.04, CSO: 0.03, CLO: 0.25 },
+  'foundation-drucker': { CIO: 0.02, CFO: 0.10, CAIO: 0.02, CHRO: 0.15, CSO: 0.00, CLO: 0.18 },
+  'innovation-jobs':    { CIO: 0.00, CFO: 0.00, CAIO: 0.05, CHRO: 0.00, CSO: 0.08, CLO: 0.00 },
+  'execution-musk':     { CIO: 0.00, CFO: 0.00, CAIO: 0.22, CHRO: 0.00, CSO: 0.05, CLO: 0.00 },
+}
+
+const BOARD_META: Record<string, { name: string; color: string }> = {
+  'vision-jensen':      { name: 'Vision · Jensen',   color: '#76B900' },
+  'scale-bezos':        { name: 'Scale · Bezos',      color: '#FF9900' },
+  'integrity-buffett':  { name: 'Integrity · Buffett', color: '#2563EB' },
+  'principles-dalio':   { name: 'Principles · Dalio', color: '#475569' },
+  'transform-nadella':  { name: 'Transform · Nadella', color: '#00A4EF' },
+  'strategy-thiel':     { name: 'Strategy · Thiel',   color: '#0891B2' },
+  'performance-welch':  { name: 'Performance · Welch', color: '#059669' },
+  'contraverse-munger': { name: 'Contraverse · Munger', color: '#D97706' },
+  'foundation-drucker': { name: 'Foundation · Drucker', color: '#7C3AED' },
+  'innovation-jobs':    { name: 'Innovation · Jobs',  color: '#EC4899' },
+  'execution-musk':     { name: 'Execution · Musk',   color: '#DC2626' },
+}
+
+const BOARD_NAMES: Record<string, string> = Object.fromEntries(
+  Object.entries(BOARD_META).map(([k, v]) => [k, v.name])
+)
+
+const currentPhase    = computed(() => PHASES.find(p => p.id === phase.value)!)
+const currentPosition = computed(() => POSITIONS.find(p => p.id === position.value)!)
+
+function adjustedWeight(key: string, pos: string): number {
+  const base  = BASE_WEIGHTS[key]?.[pos] ?? 0
+  const delta = currentPhase.value.adjust[key] ?? 0
+  return Math.max(0, base + (base > 0 ? delta : 0))
+}
+
+const sortedBoards = computed(() => {
+  const pos = position.value
+  const items = Object.keys(BASE_WEIGHTS).map(key => {
+    const w     = adjustedWeight(key, pos)
+    const base  = BASE_WEIGHTS[key]?.[pos] ?? 0
+    const delta = w - base
+    return {
+      key,
+      name:   BOARD_META[key].name,
+      color:  BOARD_META[key].color,
+      weight: w,
+      delta:  Math.abs(delta) > 0.001 ? delta : 0,
+      rank:   0,
+    }
+  })
+  items.sort((a, b) => b.weight - a.weight)
+  let rank = 0
+  items.forEach(item => { item.rank = item.weight > 0 ? ++rank : 99 })
+  return items
+})
+
+const maxWeight = computed(() =>
+  Math.max(...sortedBoards.value.map(i => i.weight), 0.01)
+)
+
+function setPhase(id: string) {
+  phase.value = id
+}
+</script>
+
+<style scoped>
+.wb-wrap {
+  margin: 24px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--vp-c-bg-soft);
+}
+
+/* ── 국면 섹션 ── */
+.wb-phase-section {
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+}
+.wb-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--vp-c-text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+.wb-phase-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.wb-phase-btn {
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1.5px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.wb-phase-btn:hover { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1); }
+.wb-phase-btn.active {
+  background: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+  color: #fff;
+}
+.wb-phase-desc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.wb-phase-badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.wb-phase-text {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+.wb-phase-adjust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 24px;
+}
+.wb-adjust-chip {
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.wb-adjust-chip.up   { background: #DCFCE7; color: #166534; }
+.wb-adjust-chip.down { background: #FEE2E2; color: #991B1B; }
+
+/* ── 포지션 탭 ── */
+.wb-pos-tabs {
+  display: flex;
+  padding: 12px 16px 0;
+  gap: 4px;
+  background: var(--vp-c-bg);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.wb-pos-btn {
+  padding: 6px 14px;
+  border-radius: 8px 8px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background: none;
+  color: var(--vp-c-text-3);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.wb-pos-btn:hover { color: var(--vp-c-text-1); background: var(--vp-c-bg-soft); }
+.wb-pos-btn.active {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-divider);
+  border-bottom-color: var(--vp-c-bg-soft);
+  margin-bottom: -1px;
+}
+
+/* ── 포지션 패널 ── */
+.wb-pos-panel { padding: 20px 24px 24px; }
+.wb-pos-header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.wb-pos-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+.wb-pos-focus {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+}
+
+/* ── 바 차트 ── */
+.wb-bars-inner { display: flex; flex-direction: column; gap: 10px; }
+.wb-bar-row {
+  display: grid;
+  grid-template-columns: 200px 1fr 68px;
+  align-items: center;
+  gap: 12px;
+  transition: opacity 0.3s ease;
+}
+.wb-bar-row.inactive { opacity: 0.3; }
+.wb-bar-row.top3 .wb-name { font-weight: 600; color: var(--vp-c-text-1); }
+
+.wb-bar-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.wb-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1.5px solid var(--vp-c-divider);
+}
+.wb-name {
+  font-size: 12px;
+  color: var(--vp-c-text-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wb-rank-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.wb-bar-track {
+  height: 8px;
+  background: var(--vp-c-divider);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.wb-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
+}
+
+.wb-bar-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+.wb-bar-value.zero { color: var(--vp-c-text-3); font-weight: 400; }
+.wb-delta { font-size: 10px; font-weight: 700; }
+.wb-delta.up   { color: #166534; }
+.wb-delta.down { color: #991B1B; }
+
+/* ── TransitionGroup 애니메이션 ── */
+.wb-bar-move        { transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+.wb-bar-enter-active { transition: all 0.4s ease; }
+.wb-bar-leave-active { transition: all 0.3s ease; position: absolute; }
+.wb-bar-enter-from, .wb-bar-leave-to { opacity: 0; transform: translateY(-8px); }
+
+/* ── 모바일 ── */
+@media (max-width: 640px) {
+  .wb-bar-row { grid-template-columns: 140px 1fr 52px; gap: 8px; }
+  .wb-name { font-size: 11px; }
+  .wb-rank-badge { display: none; }
+  .wb-pos-btn { padding: 5px 10px; font-size: 12px; }
+}
+</style>
