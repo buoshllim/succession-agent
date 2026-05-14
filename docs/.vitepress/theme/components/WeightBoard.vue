@@ -282,11 +282,14 @@ function setPhase(id: string) {
   gap: 4px;
   background: var(--vp-c-bg);
   border-bottom: 1px solid var(--vp-c-divider);
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+.wb-pos-tabs::-webkit-scrollbar { display: none; }
 .wb-pos-btn {
-  padding: 6px 14px;
+  padding: 6px 12px;
   border-radius: 8px 8px 0 0;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   border: 1px solid transparent;
   border-bottom: none;
@@ -294,6 +297,8 @@ function setPhase(id: string) {
   color: var(--vp-c-text-3);
   cursor: pointer;
   transition: all 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .wb-pos-btn:hover { color: var(--vp-c-text-1); background: var(--vp-c-bg-soft); }
 .wb-pos-btn.active {
