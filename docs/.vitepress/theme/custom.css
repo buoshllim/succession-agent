@@ -335,6 +335,7 @@ body {
 
 .home-split-col .board-hero-card:not(.board-hero-card--secondary) {
   flex: 1;
+  min-height: 100px;
 }
 
 .home-split-col .board-hero-card--secondary {
