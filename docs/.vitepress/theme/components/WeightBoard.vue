@@ -113,25 +113,30 @@ const PHASES = [
 
 const POSITIONS = [
   { id: 'CIO',  label: 'CIO (최고투자책임자)',  focus: 'AI 기반 투자 의사결정 · 투자 인프라 · 리스크 관리' },
+  { id: 'MD',   label: 'MD (투자담당)',         focus: '직접 투자 실행 · 포트폴리오 운용 · 딜소싱 · 밸류에이션' },
   { id: 'CFO',  label: 'CFO (최고재무책임자)',  focus: '재무 전략 · 자본 배분 · 투자자 관계' },
   { id: 'CAIO', label: 'CAIO (최고AI책임자)',   focus: 'AI 전략 수립 · AI 조직 구축 · 기술-비즈니스 연결' },
+  { id: 'AIDT', label: 'AI/DT 담당',            focus: 'AI/DT 실행 · 내부 시스템 혁신 · 데이터 전략' },
+  { id: 'CISO', label: 'CISO (정보보호담당)',   focus: '사이버 보안 · 정보 보호 체계 · 보안 리스크 관리' },
   { id: 'CHRO', label: 'CHRO (최고인사책임자)', focus: '인재 전략 · 조직 문화 · 리더십 개발' },
   { id: 'CSO',  label: 'CSO (최고전략책임자)',  focus: '중장기 전략 · 시장 분석 · M&A · 신사업' },
   { id: 'CLO',  label: 'CLO (최고법무책임자)',  focus: '법무 리스크 · 컴플라이언스 · 지배구조' },
+  { id: 'CIRO', label: 'CIRO (최고IR책임자)',   focus: 'IR 전략 · 투자자 관계 · ESG 공시 · 자본시장 커뮤니케이션' },
 ]
 
 const BASE_WEIGHTS: Record<string, Record<string, number>> = {
-  'vision-jensen':      { CIO: 0.22, CFO: 0.00, CAIO: 0.30, CHRO: 0.02, CSO: 0.18, CLO: 0.00 },
-  'scale-bezos':        { CIO: 0.18, CFO: 0.10, CAIO: 0.12, CHRO: 0.07, CSO: 0.20, CLO: 0.02 },
-  'integrity-buffett':  { CIO: 0.17, CFO: 0.25, CAIO: 0.05, CHRO: 0.12, CSO: 0.10, CLO: 0.15 },
-  'principles-dalio':   { CIO: 0.15, CFO: 0.20, CAIO: 0.08, CHRO: 0.10, CSO: 0.15, CLO: 0.28 },
-  'transform-nadella':  { CIO: 0.10, CFO: 0.05, CAIO: 0.15, CHRO: 0.28, CSO: 0.07, CLO: 0.05 },
-  'strategy-thiel':     { CIO: 0.08, CFO: 0.07, CAIO: 0.20, CHRO: 0.00, CSO: 0.25, CLO: 0.00 },
-  'performance-welch':  { CIO: 0.05, CFO: 0.07, CAIO: 0.05, CHRO: 0.22, CSO: 0.02, CLO: 0.07 },
-  'contraverse-munger': { CIO: 0.03, CFO: 0.15, CAIO: 0.03, CHRO: 0.04, CSO: 0.03, CLO: 0.25 },
-  'foundation-drucker': { CIO: 0.02, CFO: 0.10, CAIO: 0.02, CHRO: 0.15, CSO: 0.00, CLO: 0.18 },
-  'innovation-jobs':    { CIO: 0.00, CFO: 0.00, CAIO: 0.05, CHRO: 0.00, CSO: 0.08, CLO: 0.00 },
-  'execution-musk':     { CIO: 0.00, CFO: 0.00, CAIO: 0.22, CHRO: 0.00, CSO: 0.05, CLO: 0.00 },
+  //                         CIO   MD    CFO   CAIO  AIDT  CISO  CHRO  CSO   CLO   CIRO
+  'vision-jensen':      { CIO:0.22, MD:0.15, CFO:0.00, CAIO:0.30, AIDT:0.25, CISO:0.05, CHRO:0.02, CSO:0.18, CLO:0.00, CIRO:0.05 },
+  'scale-bezos':        { CIO:0.18, MD:0.12, CFO:0.10, CAIO:0.12, AIDT:0.15, CISO:0.08, CHRO:0.07, CSO:0.20, CLO:0.02, CIRO:0.20 },
+  'integrity-buffett':  { CIO:0.17, MD:0.22, CFO:0.25, CAIO:0.05, AIDT:0.05, CISO:0.15, CHRO:0.12, CSO:0.10, CLO:0.15, CIRO:0.25 },
+  'principles-dalio':   { CIO:0.15, MD:0.18, CFO:0.20, CAIO:0.08, AIDT:0.07, CISO:0.25, CHRO:0.10, CSO:0.15, CLO:0.28, CIRO:0.15 },
+  'transform-nadella':  { CIO:0.10, MD:0.05, CFO:0.05, CAIO:0.15, AIDT:0.18, CISO:0.05, CHRO:0.28, CSO:0.07, CLO:0.05, CIRO:0.07 },
+  'strategy-thiel':     { CIO:0.08, MD:0.07, CFO:0.07, CAIO:0.20, AIDT:0.10, CISO:0.08, CHRO:0.00, CSO:0.25, CLO:0.00, CIRO:0.08 },
+  'performance-welch':  { CIO:0.05, MD:0.10, CFO:0.07, CAIO:0.05, AIDT:0.05, CISO:0.10, CHRO:0.22, CSO:0.02, CLO:0.07, CIRO:0.05 },
+  'contraverse-munger': { CIO:0.03, MD:0.08, CFO:0.15, CAIO:0.03, AIDT:0.05, CISO:0.22, CHRO:0.04, CSO:0.03, CLO:0.25, CIRO:0.08 },
+  'foundation-drucker': { CIO:0.02, MD:0.03, CFO:0.10, CAIO:0.02, AIDT:0.05, CISO:0.02, CHRO:0.15, CSO:0.00, CLO:0.18, CIRO:0.07 },
+  'innovation-jobs':    { CIO:0.00, MD:0.00, CFO:0.00, CAIO:0.05, AIDT:0.05, CISO:0.00, CHRO:0.00, CSO:0.08, CLO:0.00, CIRO:0.00 },
+  'execution-musk':     { CIO:0.00, MD:0.00, CFO:0.00, CAIO:0.22, AIDT:0.20, CISO:0.00, CHRO:0.00, CSO:0.05, CLO:0.00, CIRO:0.00 },
 }
 
 const BOARD_META: Record<string, { name: string; color: string }> = {

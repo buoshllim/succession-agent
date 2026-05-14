@@ -17,6 +17,10 @@ sidebar: false
       <span class="stock-name">CIO</span>
       <span class="stock-ticker">최고투자책임자</span>
     </a>
+    <a href="/succession/md" class="stock-card-home">
+      <span class="stock-name">MD</span>
+      <span class="stock-ticker">투자담당</span>
+    </a>
     <a href="/succession/cfo" class="stock-card-home">
       <span class="stock-name">CFO</span>
       <span class="stock-ticker">최고재무책임자</span>
@@ -24,6 +28,14 @@ sidebar: false
     <a href="/succession/caio" class="stock-card-home">
       <span class="stock-name">CAIO</span>
       <span class="stock-ticker">최고AI책임자</span>
+    </a>
+    <a href="/succession/aidt" class="stock-card-home">
+      <span class="stock-name">AI/DT</span>
+      <span class="stock-ticker">AI/DT 담당</span>
+    </a>
+    <a href="/succession/ciso" class="stock-card-home">
+      <span class="stock-name">CISO</span>
+      <span class="stock-ticker">정보보호담당</span>
     </a>
     <a href="/succession/chro" class="stock-card-home">
       <span class="stock-name">CHRO</span>
@@ -36,6 +48,10 @@ sidebar: false
     <a href="/succession/clo" class="stock-card-home">
       <span class="stock-name">CLO</span>
       <span class="stock-ticker">최고법무책임자</span>
+    </a>
+    <a href="/succession/ciro" class="stock-card-home">
+      <span class="stock-name">CIRO</span>
+      <span class="stock-ticker">최고IR책임자</span>
     </a>
   </div>
 </div>

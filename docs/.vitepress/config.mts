@@ -11,10 +11,15 @@ export default defineConfig({
         text: '포지션별',
         items: [
           { text: 'CIO (최고투자책임자)', link: '/succession/cio' },
+          { text: 'MD (투자담당)',        link: '/succession/md' },
           { text: 'CFO (최고재무책임자)', link: '/succession/cfo' },
           { text: 'CAIO (최고AI책임자)', link: '/succession/caio' },
+          { text: 'AI/DT 담당',          link: '/succession/aidt' },
+          { text: 'CISO (정보보호담당)', link: '/succession/ciso' },
           { text: 'CHRO (최고인사책임자)', link: '/succession/chro' },
           { text: 'CSO (최고전략책임자)', link: '/succession/cso' },
+          { text: 'CLO (최고법무책임자)', link: '/succession/clo' },
+          { text: 'CIRO (최고IR책임자)', link: '/succession/ciro' },
         ]
       },
       {
@@ -32,10 +37,15 @@ export default defineConfig({
           text: '포지션별',
           items: [
             { text: 'CIO (최고투자책임자)', link: '/succession/cio' },
+            { text: 'MD (투자담당)',        link: '/succession/md' },
             { text: 'CFO (최고재무책임자)', link: '/succession/cfo' },
             { text: 'CAIO (최고AI책임자)', link: '/succession/caio' },
+            { text: 'AI/DT 담당',          link: '/succession/aidt' },
+            { text: 'CISO (정보보호담당)', link: '/succession/ciso' },
             { text: 'CHRO (최고인사책임자)', link: '/succession/chro' },
             { text: 'CSO (최고전략책임자)', link: '/succession/cso' },
+            { text: 'CLO (최고법무책임자)', link: '/succession/clo' },
+            { text: 'CIRO (최고IR책임자)', link: '/succession/ciro' },
           ]
         }
       ],
@@ -52,11 +62,15 @@ export default defineConfig({
           text: '포지션별 이사회 기록',
           items: [
             { text: 'CIO (최고투자책임자)', link: '/succession/debate/cio' },
+            { text: 'MD (투자담당)',        link: '/succession/debate/md' },
             { text: 'CFO (최고재무책임자)', link: '/succession/debate/cfo' },
             { text: 'CAIO (최고AI책임자)', link: '/succession/debate/caio' },
+            { text: 'AI/DT 담당',          link: '/succession/debate/aidt' },
+            { text: 'CISO (정보보호담당)', link: '/succession/debate/ciso' },
             { text: 'CHRO (최고인사책임자)', link: '/succession/debate/chro' },
             { text: 'CSO (최고전략책임자)', link: '/succession/debate/cso' },
             { text: 'CLO (최고법무책임자)', link: '/succession/debate/clo' },
+            { text: 'CIRO (최고IR책임자)', link: '/succession/debate/ciro' },
           ]
         }
       ],
@@ -72,11 +86,15 @@ export default defineConfig({
           text: '포지션별 이사회 기록',
           items: [
             { text: 'CIO (최고투자책임자)', link: '/succession/debate/cio' },
+            { text: 'MD (투자담당)',        link: '/succession/debate/md' },
             { text: 'CFO (최고재무책임자)', link: '/succession/debate/cfo' },
             { text: 'CAIO (최고AI책임자)', link: '/succession/debate/caio' },
+            { text: 'AI/DT 담당',          link: '/succession/debate/aidt' },
+            { text: 'CISO (정보보호담당)', link: '/succession/debate/ciso' },
             { text: 'CHRO (최고인사책임자)', link: '/succession/debate/chro' },
             { text: 'CSO (최고전략책임자)', link: '/succession/debate/cso' },
             { text: 'CLO (최고법무책임자)', link: '/succession/debate/clo' },
+            { text: 'CIRO (최고IR책임자)', link: '/succession/debate/ciro' },
           ]
         }
       ],

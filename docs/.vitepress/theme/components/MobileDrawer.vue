@@ -60,12 +60,16 @@ const { isDark } = useData()
 const open = ref(false)
 
 const positions = [
-  { name: 'CIO', sub: '최고투자책임자', link: '/succession/cio' },
-  { name: 'CFO', sub: '최고재무책임자', link: '/succession/cfo' },
-  { name: 'CAIO', sub: '최고AI책임자',  link: '/succession/caio' },
-  { name: 'CHRO', sub: '최고인사책임자', link: '/succession/chro' },
-  { name: 'CSO', sub: '최고전략책임자', link: '/succession/cso' },
-  { name: 'CLO', sub: '최고법무책임자', link: '/succession/clo' },
+  { name: 'CIO',     sub: '최고투자책임자', link: '/succession/cio' },
+  { name: 'MD',      sub: '투자담당',       link: '/succession/md' },
+  { name: 'CFO',     sub: '최고재무책임자', link: '/succession/cfo' },
+  { name: 'CAIO',    sub: '최고AI책임자',   link: '/succession/caio' },
+  { name: 'AI/DT',   sub: 'AI/DT 담당',    link: '/succession/aidt' },
+  { name: 'CISO',    sub: '정보보호담당',   link: '/succession/ciso' },
+  { name: 'CHRO',    sub: '최고인사책임자', link: '/succession/chro' },
+  { name: 'CSO',     sub: '최고전략책임자', link: '/succession/cso' },
+  { name: 'CLO',     sub: '최고법무책임자', link: '/succession/clo' },
+  { name: 'CIRO',    sub: '최고IR책임자',   link: '/succession/ciro' },
 ]
 </script>
 
