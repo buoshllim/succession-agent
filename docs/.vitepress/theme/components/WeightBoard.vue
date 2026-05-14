@@ -201,7 +201,6 @@ function setPhase(id: string) {
   margin: 24px 0;
   border: 1px solid var(--vp-c-divider);
   border-radius: 14px;
-  overflow: hidden;
   background: var(--vp-c-bg-soft);
 }
 
