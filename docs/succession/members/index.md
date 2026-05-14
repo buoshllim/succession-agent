@@ -106,6 +106,24 @@ aside: false
     </div>
   </a>
 
+  <a href="/succession/members/innovation-jobs" class="guru-card">
+    <img src="/board/innovation-jobs.png" class="guru-card-avatar" alt="Steve Jobs" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Steve Jobs</div>
+      <div class="guru-card-role">Innovation · Design</div>
+      <div class="guru-card-quote">"집중이란 No라고 말하는 것"</div>
+    </div>
+  </a>
+
+  <a href="/succession/members/execution-musk" class="guru-card">
+    <img src="/board/execution-musk.png" class="guru-card-avatar" alt="Elon Musk" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Elon Musk</div>
+      <div class="guru-card-role">Execution · Break</div>
+      <div class="guru-card-quote">"퍼스트 프린시플로 생각하라"</div>
+    </div>
+  </a>
+
 </div>
 
 ---

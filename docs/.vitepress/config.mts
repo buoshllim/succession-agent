@@ -106,6 +106,8 @@ export default defineConfig({
             { text: 'Jack Welch',   link: '/succession/members/performance-welch' },
             { text: 'Charlie Munger', link: '/succession/members/contraverse-munger' },
             { text: 'Peter Drucker', link: '/succession/members/foundation-drucker' },
+            { text: 'Steve Jobs',    link: '/succession/members/innovation-jobs' },
+            { text: 'Elon Musk',     link: '/succession/members/execution-musk' },
           ]
         }
       ],

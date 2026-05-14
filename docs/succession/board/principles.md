@@ -50,6 +50,8 @@ Contraverse·Munger 이사가 "뽑으면 안 되는 이유"를 전담한다. 전
 | Performance · Welch | 0.05 | 0.07 | 0.05 | **0.22** | 0.02 | 0.07 |
 | Contraverse · Munger | 0.03 | 0.15 | 0.03 | 0.04 | 0.03 | **0.25** |
 | Foundation · Drucker | 0.02 | 0.10 | 0.02 | 0.15 | — | 0.18 |
+| Innovation · Jobs | — | — | 0.05 | — | **0.08** | — |
+| Execution · Musk | — | — | **0.22** | — | 0.05 | — |
 
 > — 는 0.00 (비활성화)
 
