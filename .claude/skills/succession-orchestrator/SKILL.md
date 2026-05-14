@@ -1,6 +1,6 @@
 ---
 name: succession-orchestrator
-description: 승계 이사회 오케스트레이터. "승계 심의", "이사회 열어", "CIO 후보 심의해줘", "succession", "후보자 평가", "다시 실행", "재심의" 등의 요청이 오면 반드시 이 스킬을 사용하라. 에이전트 이사 9명 병렬 평가 → 에이전트 팀 실시간 토론 → JK 최종 선언 → 웹 퍼블리시 전체 워크플로우를 담당한다.
+description: 승계 이사회 오케스트레이터. "승계 심의", "이사회 열어", "CIO 후보 심의해줘", "succession", "후보자 평가", "다시 실행", "재심의" 등의 요청이 오면 반드시 이 스킬을 사용하라. 에이전트 이사 10명 병렬 평가 → 에이전트 팀 실시간 토론 → JK 최종 선언 → 웹 퍼블리시 전체 워크플로우를 담당한다.
 ---
 
 # 승계 이사회 오케스트레이터
@@ -58,6 +58,7 @@ description: 승계 이사회 오케스트레이터. "승계 심의", "이사회
 [Performance 그룹] board-performance-welch
 [Contraverse 그룹] board-contraverse-munger
 [Execution 그룹]  board-execution-musk      ← 가중치 0.00이면 제외
+[Lean 그룹]       board-lean-sandberg
 ```
 
 각 에이전트에게 전달하는 데이터 패키지:

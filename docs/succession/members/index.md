@@ -11,7 +11,8 @@ aside: false
   <a href="/succession/members/jk" class="guru-card ceo-card-highlight">
     <img src="/board/jk.png" class="guru-card-avatar" alt="JK" />
     <div class="guru-card-body">
-      <div class="ceo-badge">이사회 의장 · CEO</div>
+      <div class="ceo-badge">이사회 의장 · CEO
+</div>
       <div class="guru-card-name">JK</div>
       <div class="guru-card-role">최종 선언 · 5단계 필터</div>
       <div class="guru-card-quote">"AI가 차이를 만드는 열쇠다"</div>
@@ -20,7 +21,7 @@ aside: false
 </div>
 
 <div class="board-divider">
-  <span class="board-divider-label">에이전트 이사 (9인)</span>
+  <span class="board-divider-label">에이전트 이사 (10인)</span>
 </div>
 
 <div class="guru-grid">
@@ -103,6 +104,16 @@ aside: false
       <div class="guru-card-name">Elon Musk</div>
       <div class="guru-card-role">Execution · Break</div>
       <div class="guru-card-quote">"퍼스트 프린시플로 생각하라"</div>
+    </div>
+  </a>
+
+
+  <a href="/succession/members/lean-sandberg" class="guru-card">
+    <img src="/board/lean-sandberg.png" class="guru-card-avatar" alt="Sheryl Sandberg" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Sheryl Sandberg</div>
+      <div class="guru-card-role">Lean · Org</div>
+      <div class="guru-card-quote">"앞으로 나아가라, Lean In"</div>
     </div>
   </a>
 

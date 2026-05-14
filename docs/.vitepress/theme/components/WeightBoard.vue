@@ -135,6 +135,7 @@ const BASE_WEIGHTS: Record<string, Record<string, number>> = {
   'performance-welch':  { CIO:0.05, MD:0.10, CFO:0.07, CAIO:0.05, AIDT:0.05, CISO:0.10, CHRO:0.22, CSO:0.02, CLO:0.07, CIRO:0.05 },
   'contraverse-munger': { CIO:0.03, MD:0.08, CFO:0.15, CAIO:0.03, AIDT:0.05, CISO:0.22, CHRO:0.04, CSO:0.03, CLO:0.25, CIRO:0.08 },
   'execution-musk':     { CIO:0.00, MD:0.00, CFO:0.00, CAIO:0.22, AIDT:0.20, CISO:0.00, CHRO:0.00, CSO:0.05, CLO:0.00, CIRO:0.00 },
+  'lean-sandberg':      { CIO:0.00, MD:0.00, CFO:0.03, CAIO:0.05, AIDT:0.05, CISO:0.03, CHRO:0.25, CSO:0.05, CLO:0.05, CIRO:0.08 },
 }
 
 const BOARD_META: Record<string, { name: string; color: string }> = {
@@ -147,6 +148,7 @@ const BOARD_META: Record<string, { name: string; color: string }> = {
   'performance-welch':  { name: 'Performance · Welch', color: '#059669' },
   'contraverse-munger': { name: 'Contraverse · Munger', color: '#D97706' },
   'execution-musk':     { name: 'Execution · Musk',   color: '#DC2626' },
+  'lean-sandberg':      { name: 'Lean · Sandberg',     color: '#14B8A6' },
 }
 
 const BOARD_NAMES: Record<string, string> = Object.fromEntries(
