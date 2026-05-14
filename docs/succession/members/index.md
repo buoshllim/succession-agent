@@ -1,39 +1,109 @@
+---
+title: 이사회 멤버
+aside: false
+---
+
 # 👥 이사회 멤버
 
-에이전트 이사회는 전설적 CEO들의 경영 철학을 페르소나로 구현한 9인의 에이전트 이사로 구성됩니다.
-각 이사는 자신의 핵심 가치 관점에서 후보자를 독립적으로 평가하고 실시간으로 토론합니다.
+<p class="board-section-label">이사회 의장 · CEO</p>
 
----
+<div class="ceo-row">
+  <a href="/succession/members/jk" class="guru-card ceo-card-highlight">
+    <img src="/board/jk.png" class="guru-card-avatar" alt="JK" />
+    <div class="guru-card-body">
+      <div class="ceo-badge">이사회 의장 · CEO</div>
+      <div class="guru-card-name">JK</div>
+      <div class="guru-card-role">최종 선언 · 5단계 필터</div>
+      <div class="guru-card-quote">"AI가 차이를 만드는 열쇠다"</div>
+    </div>
+  </a>
+</div>
 
-## 의장
+<div class="board-divider">
+  <span class="board-divider-label">에이전트 이사 (9인)</span>
+</div>
 
-| | 의장 | 역할 |
-|-|------|------|
-| 👑 | **JK** (CEO) | 이사회 주재 · 5단계 필터 최종 선언 |
+<div class="guru-grid">
 
----
+  <a href="/succession/members/vision-jensen" class="guru-card">
+    <img src="/board/vision-jensen.png" class="guru-card-avatar" alt="Jensen Huang" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Jensen Huang</div>
+      <div class="guru-card-role">Vision · Tech</div>
+      <div class="guru-card-quote">"AI는 새로운 산업혁명이다"</div>
+    </div>
+  </a>
 
-## 이사 9인
+  <a href="/succession/members/scale-bezos" class="guru-card">
+    <img src="/board/scale-bezos.png" class="guru-card-avatar" alt="Jeff Bezos" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Jeff Bezos</div>
+      <div class="guru-card-role">Scale · System</div>
+      <div class="guru-card-quote">"Day 1 정신을 절대 잃지 마라"</div>
+    </div>
+  </a>
 
-| 가치 키워드 | CEO 페르소나 | 핵심 관점 | CIO 가중치 |
-|-----------|-------------|---------|-----------|
-| Vision · Tech | **Jensen Huang** (NVIDIA) | AI/기술 전환기 리더십 | 0.22 |
-| Scale · System | **Jeff Bezos** (Amazon) | 인프라 구축 · 장기 확장성 | 0.18 |
-| Integrity · Value | **Warren Buffett** (Berkshire) | 투자 판단 본질 · 신뢰 | 0.17 |
-| Principles · Risk | **Ray Dalio** (Bridgewater) | 원칙 기반 시스템 · 리스크 관리 | 0.15 |
-| Transform · Culture | **Satya Nadella** (Microsoft) | 조직 문화 전환 · 성장 마인드셋 | 0.10 |
-| Strategy · Edge | **Peter Thiel** (Palantir) | 차별화된 독점 전략 | 0.08 |
-| Performance · People | **Jack Welch** (GE) | 성과주의 · 인재 차별화 | 0.05 |
-| Contraverse · Bias | **Charlie Munger** (Berkshire) | 인지 편향 제거 · 역발상 | 0.03 |
-| Foundation · Mgmt | **Peter Drucker** | 경영자의 본질 · 조직 철학 | 0.02 |
+  <a href="/succession/members/integrity-buffett" class="guru-card">
+    <img src="/board/integrity-buffett.png" class="guru-card-avatar" alt="Warren Buffett" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Warren Buffett</div>
+      <div class="guru-card-role">Integrity · Value</div>
+      <div class="guru-card-quote">"사람을 뽑을 때 세 가지를 본다"</div>
+    </div>
+  </a>
 
-> 가중치는 포지션 유형에 따라 조정됩니다. 위는 CIO 기준입니다.
+  <a href="/succession/members/principles-dalio" class="guru-card">
+    <img src="/board/principles-dalio.png" class="guru-card-avatar" alt="Ray Dalio" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Ray Dalio</div>
+      <div class="guru-card-role">Principles · Risk</div>
+      <div class="guru-card-quote">"고통 + 성찰 = 성장"</div>
+    </div>
+  </a>
 
----
+  <a href="/succession/members/transform-nadella" class="guru-card">
+    <img src="/board/transform-nadella.png" class="guru-card-avatar" alt="Satya Nadella" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Satya Nadella</div>
+      <div class="guru-card-role">Transform · Culture</div>
+      <div class="guru-card-quote">"Know-it-all이 아닌 Learn-it-all"</div>
+    </div>
+  </a>
 
-## 이사회 운영 원칙
+  <a href="/succession/members/strategy-thiel" class="guru-card">
+    <img src="/board/strategy-thiel.png" class="guru-card-avatar" alt="Peter Thiel" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Peter Thiel</div>
+      <div class="guru-card-role">Strategy · Edge</div>
+      <div class="guru-card-quote">"경쟁은 패자들의 것이다"</div>
+    </div>
+  </a>
 
-1. **지금과 미래를 분리한다** — "지금 잘하는 사람"과 "앞으로 잘할 사람"을 구분
-2. **역발상을 구조화한다** — Contraverse·Munger 이사가 "뽑으면 안 되는 이유"를 전담
-3. **데이터 부족도 판단한다** — 불확실성은 확신도로 표시, 판단은 내린다
-4. **회사 국면이 가중치를 결정한다** — 비즈니스 환경에 따라 이사 비중 조정
+  <a href="/succession/members/performance-welch" class="guru-card">
+    <img src="/board/performance-welch.png" class="guru-card-avatar" alt="Jack Welch" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Jack Welch</div>
+      <div class="guru-card-role">Performance · People</div>
+      <div class="guru-card-quote">"리더의 일은 다음 리더를 키우는 것"</div>
+    </div>
+  </a>
+
+  <a href="/succession/members/contraverse-munger" class="guru-card">
+    <img src="/board/contraverse-munger.png" class="guru-card-avatar" alt="Charlie Munger" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Charlie Munger</div>
+      <div class="guru-card-role">Contraverse · Bias</div>
+      <div class="guru-card-quote">"뒤집어라, 항상 뒤집어라"</div>
+    </div>
+  </a>
+
+  <a href="/succession/members/foundation-drucker" class="guru-card">
+    <img src="/board/foundation-drucker.png" class="guru-card-avatar" alt="Peter Drucker" />
+    <div class="guru-card-body">
+      <div class="guru-card-name">Peter Drucker</div>
+      <div class="guru-card-role">Foundation · Mgmt</div>
+      <div class="guru-card-quote">"경영은 올바른 일을 하는 것"</div>
+    </div>
+  </a>
+
+</div>
