@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Succession Brief',
+  title: 'Succession Agent',
   description: 'AI 이사회 기반 C-Suite 승계 심의 기록',
   lang: 'ko-KR',
   appearance: true,
@@ -50,7 +50,7 @@ export default defineConfig({
     },
     socialLinks: [],
     footer: {
-      message: '본 자료는 AI 이사회 심의 기록입니다. 최종 인사 결정은 이사회의 판단에 따릅니다.',
+      message: '© 2026 Succession Agent · Powered by S',
     }
   }
 })
