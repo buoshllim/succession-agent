@@ -182,12 +182,9 @@ const isChair = (speaker: string) =>
   speaker === '의장' || speaker === 'JK'
 
 const readinessClass = (s = '') => {
-  if (s.includes('Ready Now'))   return 'full-buy'
-  if (s.includes('Ready in 2Y')) return 'partial-buy'
-  if (s.includes('Not Ready'))   return 'immediate-sell'
-  if (s.includes('🟢'))          return 'full-buy'
-  if (s.includes('🟡'))          return 'partial-buy'
-  if (s.includes('🔴'))          return 'immediate-sell'
+  if (s.includes('Ready Now')   || s.includes('🟢')) return 'ready-now'
+  if (s.includes('Ready in 2Y') || s.includes('🟡')) return 'ready-2y'
+  if (s.includes('Not Ready')   || s.includes('🔴')) return 'not-ready'
   return ''
 }
 </script>

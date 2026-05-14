@@ -18,10 +18,6 @@ export default defineConfig({
         ]
       },
       {
-        text: '날짜별 심의',
-        items: []
-      },
-      {
         text: '이사회',
         items: [
           { text: '🏛️ 이사회 현황', link: '/succession/board/' },
@@ -40,10 +36,6 @@ export default defineConfig({
             { text: 'CHRO (최고인사책임자)', link: '/succession/chro' },
             { text: 'CSO (최고전략책임자)', link: '/succession/cso' },
           ]
-        },
-        {
-          text: '날짜별 심의',
-          items: []
         }
       ],
       '/succession/board/': [

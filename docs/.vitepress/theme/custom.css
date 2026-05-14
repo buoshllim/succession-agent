@@ -1213,6 +1213,11 @@ body {
 .debate-final.full-buy  { background: #DCFCE7; color: #166534; }
 .debate-final.immediate-sell { background: #DBEAFE; color: #1E40AF; }
 
+/* 승계 이사회 준비도 클래스 */
+.debate-final.ready-now  { background: #DCFCE7; color: #166534; }
+.debate-final.ready-2y   { background: #FFF7ED; color: #9A3412; }
+.debate-final.not-ready  { background: #FEE2E2; color: #991B1B; }
+
 .final-conf {
   font-size: 12px;
   font-weight: 500;
@@ -1310,6 +1315,11 @@ body {
 .stance-badge.partial-buy  { background: #FFF7ED; color: #9A3412; }
 .stance-badge.full-buy     { background: #DCFCE7; color: #166534; }
 .stance-badge.immediate-sell { background: #DBEAFE; color: #1E40AF; }
+
+/* 승계 이사회 준비도 배지 */
+.stance-badge.ready-now  { background: #DCFCE7; color: #166534; }
+.stance-badge.ready-2y   { background: #FFF7ED; color: #9A3412; }
+.stance-badge.not-ready  { background: #FEE2E2; color: #991B1B; }
 
 .stance-changed {
   font-size: 11px;

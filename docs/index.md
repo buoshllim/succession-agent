@@ -1,26 +1,83 @@
 ---
-layout: home
-
-hero:
-  name: "Succession Brief"
-  text: "AI 이사회 기반 C-Suite 승계 심의"
-  tagline: "11인의 전설적 CEO 페르소나 에이전트가 후보자를 심의하고 토론한 결과를 기록합니다."
-  actions:
-    - theme: brand
-      text: 이사회 현황
-      link: /succession/board/
-    - theme: alt
-      text: 이사회 위원
-      link: /succession/members/
-
-features:
-  - icon: 🏛️
-    title: 멀티 에이전트 이사회
-    details: Jensen Huang, Jeff Bezos, Warren Buffett 등 9인의 CEO 페르소나 에이전트가 병렬로 후보자를 평가합니다.
-  - icon: ⚡
-    title: 실시간 토론
-    details: 이사들이 직접 메시지를 주고받으며 의견 충돌을 해소하고 합의에 이릅니다.
-  - icon: 👑
-    title: JK 최종 선언
-    details: CEO JK가 5단계 필터로 최종 준비도를 판단하고 이사회 코멘트를 남깁니다.
+title: Succession Brief
+layout: page
+aside: false
+sidebar: false
 ---
+
+<div class="home-wrap">
+
+<!-- ── 포지션별 현황 ── -->
+<div class="home-section">
+  <div class="section-header">
+    <span class="section-label">포지션별 심의 현황</span>
+  </div>
+  <div class="stock-grid-home">
+    <a href="/succession/cio" class="stock-card-home">
+      <span class="stock-name">CIO</span>
+      <span class="stock-ticker">최고투자책임자</span>
+    </a>
+    <a href="/succession/cfo" class="stock-card-home">
+      <span class="stock-name">CFO</span>
+      <span class="stock-ticker">최고재무책임자</span>
+    </a>
+    <a href="/succession/caio" class="stock-card-home">
+      <span class="stock-name">CAIO</span>
+      <span class="stock-ticker">최고AI책임자</span>
+    </a>
+    <a href="/succession/chro" class="stock-card-home">
+      <span class="stock-name">CHRO</span>
+      <span class="stock-ticker">최고인사책임자</span>
+    </a>
+    <a href="/succession/cso" class="stock-card-home">
+      <span class="stock-name">CSO</span>
+      <span class="stock-ticker">최고전략책임자</span>
+    </a>
+    <a href="/succession/clo" class="stock-card-home">
+      <span class="stock-name">CLO</span>
+      <span class="stock-ticker">최고법무책임자</span>
+    </a>
+  </div>
+</div>
+
+<!-- ── 하단 좌우 분할 ── -->
+<div class="home-split">
+
+  <!-- 좌: 최근 심의 -->
+  <div class="home-split-col">
+    <div class="section-header">
+      <span class="section-label">최근 심의</span>
+    </div>
+    <div class="date-list-home">
+      <span class="date-list-item" style="color: var(--vp-c-text-3); font-size: 13px;">아직 심의 기록이 없습니다.</span>
+    </div>
+  </div>
+
+  <!-- 우: 이사회 -->
+  <div class="home-split-col">
+    <div class="section-header">
+      <span class="section-label">이사회</span>
+    </div>
+    <a href="/succession/board/" class="board-hero-card">
+      <span class="board-hero-icon">🏛️</span>
+      <div class="board-hero-body">
+        <div class="board-hero-title">이사회 현황</div>
+        <div class="board-hero-desc">에이전트 이사 9인 · 포지션별 최신 결의</div>
+      </div>
+      <span class="board-hero-arrow">→</span>
+    </a>
+    <a href="/succession/members/" class="board-hero-card board-hero-card--secondary">
+      <span class="board-hero-icon">👥</span>
+      <div class="board-hero-body">
+        <div class="board-hero-title">이사회 위원</div>
+        <div class="board-hero-desc">Jensen Huang · Bezos · Buffett 외 6인</div>
+      </div>
+      <span class="board-hero-arrow">→</span>
+    </a>
+  </div>
+
+</div>
+
+<p class="home-disclaimer">본 자료는 AI 이사회 심의 기록입니다. 최종 인사 결정은 이사회의 판단에 따르며, AI 분석 결과는 의사결정 참고 자료로만 활용됩니다.</p>
+
+</div>
