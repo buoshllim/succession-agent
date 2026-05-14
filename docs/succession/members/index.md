@@ -126,6 +126,3 @@ aside: false
 
 </div>
 
----
-
-[📐 이사회 운영 원칙 & 포지션별 가중치 →](/succession/board/principles)
