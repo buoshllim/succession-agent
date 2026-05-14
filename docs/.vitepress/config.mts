@@ -22,6 +22,7 @@ export default defineConfig({
         items: [
           { text: '🏛️ 이사회 현황', link: '/succession/board/' },
           { text: '👥 이사회 멤버', link: '/succession/members/' },
+          { text: '📐 운영 원칙 & 가중치', link: '/succession/board/principles' },
         ]
       },
     ],
@@ -44,6 +45,7 @@ export default defineConfig({
           items: [
             { text: '🏛️ 이사회 현황', link: '/succession/board/' },
             { text: '👥 이사회 멤버', link: '/succession/members/' },
+            { text: '📐 운영 원칙 & 가중치', link: '/succession/board/principles' },
           ]
         },
         {

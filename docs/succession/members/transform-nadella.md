@@ -7,7 +7,7 @@ aside: false
   <img src="/board/transform-nadella.png" class="member-avatar" alt="Satya Nadella" />
   <div class="member-hero-info">
     <h1 class="member-name">Satya Nadella</h1>
-    <p class="member-role">Transform · Culture · CIO 가중치 0.10</p>
+    <p class="member-role">Transform · Culture</p>
     <blockquote class="member-soul">"Know-it-all이 아닌 Learn-it-all이 되어라. 공감은 소프트 스킬이 아니라 가장 어려운 스킬이다."</blockquote>
   </div>
 </div>

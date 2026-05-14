@@ -7,7 +7,7 @@ aside: false
   <img src="/board/scale-bezos.png" class="member-avatar" alt="Jeff Bezos" />
   <div class="member-hero-info">
     <h1 class="member-name">Jeff Bezos</h1>
-    <p class="member-role">Scale · System · CIO 가중치 0.18</p>
+    <p class="member-role">Scale · System</p>
     <blockquote class="member-soul">"비전에는 완고하고, 디테일에는 유연하라."</blockquote>
   </div>
 </div>

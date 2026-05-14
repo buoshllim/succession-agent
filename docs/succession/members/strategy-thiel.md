@@ -7,7 +7,7 @@ aside: false
   <img src="/board/strategy-thiel.png" class="member-avatar" alt="Peter Thiel" />
   <div class="member-hero-info">
     <h1 class="member-name">Peter Thiel</h1>
-    <p class="member-role">Strategy · Edge · CIO 가중치 0.08</p>
+    <p class="member-role">Strategy · Edge</p>
     <blockquote class="member-soul">"당신이 동의하지 않는 중요한 진실은 무엇인가? 이 질문에 답할 수 없다면 독창적 전략도 없다."</blockquote>
   </div>
 </div>

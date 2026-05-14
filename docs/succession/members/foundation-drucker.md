@@ -7,7 +7,7 @@ aside: false
   <img src="/board/foundation-drucker.png" class="member-avatar" alt="Peter Drucker" />
   <div class="member-hero-info">
     <h1 class="member-name">Peter Drucker</h1>
-    <p class="member-role">Foundation · Mgmt · CIO 가중치 0.02</p>
+    <p class="member-role">Foundation · Mgmt</p>
     <blockquote class="member-soul">"경영은 일을 올바르게 하는 것이고, 리더십은 올바른 일을 하는 것이다."</blockquote>
   </div>
 </div>
