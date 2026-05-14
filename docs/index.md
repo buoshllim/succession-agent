@@ -56,7 +56,7 @@ sidebar: false
   <!-- 우: 이사회 -->
   <div class="home-split-col">
     <div class="section-header">
-      <span class="section-label">이사회</span>
+      <span class="section-label">에이전트 이사회</span>
     </div>
     <a href="/succession/board/" class="board-hero-card">
       <span class="board-hero-icon">🏛️</span>
@@ -70,7 +70,6 @@ sidebar: false
       <span class="board-hero-icon">👥</span>
       <div class="board-hero-body">
         <div class="board-hero-title">이사회 위원</div>
-        <div class="board-hero-desc">Jensen Huang · Bezos · Buffett 외 6인</div>
       </div>
       <span class="board-hero-arrow">→</span>
     </a>
