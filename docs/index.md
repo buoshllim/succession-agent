@@ -19,39 +19,39 @@ sidebar: false
     </a>
     <a href="/succession/md" class="position-card-home">
       <span class="position-name">MD</span>
-      <span class="position-sub">투자담당</span>
-    </a>
-    <a href="/succession/cfo" class="position-card-home">
-      <span class="position-name">CFO</span>
-      <span class="position-sub">최고재무책임자</span>
+      <span class="position-sub">투자</span>
     </a>
     <a href="/succession/caio" class="position-card-home">
-      <span class="position-name">CAIO</span>
-      <span class="position-sub">최고AI책임자</span>
+      <span class="position-name">AI혁신담당</span>
+      <span class="position-sub">&nbsp;</span>
     </a>
     <a href="/succession/aidt" class="position-card-home">
-      <span class="position-name">AI/DT</span>
-      <span class="position-sub">AI/DT 담당</span>
+      <span class="position-name">AI/DT담당</span>
+      <span class="position-sub">&nbsp;</span>
     </a>
     <a href="/succession/ciso" class="position-card-home">
-      <span class="position-name">CISO</span>
-      <span class="position-sub">정보보호담당</span>
-    </a>
-    <a href="/succession/chro" class="position-card-home">
-      <span class="position-name">CHRO</span>
-      <span class="position-sub">최고인사책임자</span>
+      <span class="position-name">정보보호담당</span>
+      <span class="position-sub">&nbsp;</span>
     </a>
     <a href="/succession/cso" class="position-card-home">
-      <span class="position-name">CSO</span>
-      <span class="position-sub">최고전략책임자</span>
+      <span class="position-name">전략담당</span>
+      <span class="position-sub">&nbsp;</span>
+    </a>
+    <a href="/succession/cfo" class="position-card-home">
+      <span class="position-name">재무담당</span>
+      <span class="position-sub">&nbsp;</span>
     </a>
     <a href="/succession/clo" class="position-card-home">
-      <span class="position-name">CLO</span>
-      <span class="position-sub">최고법무책임자</span>
+      <span class="position-name">법무담당</span>
+      <span class="position-sub">&nbsp;</span>
     </a>
     <a href="/succession/ciro" class="position-card-home">
-      <span class="position-name">CIRO</span>
-      <span class="position-sub">최고IR책임자</span>
+      <span class="position-name">IR담당</span>
+      <span class="position-sub">&nbsp;</span>
+    </a>
+    <a href="/succession/chro" class="position-card-home">
+      <span class="position-name">HR담당</span>
+      <span class="position-sub">&nbsp;</span>
     </a>
   </div>
 </div>

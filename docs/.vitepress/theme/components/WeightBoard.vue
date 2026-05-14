@@ -112,16 +112,16 @@ const PHASES = [
 ]
 
 const POSITIONS = [
-  { id: 'CIO',  label: 'CIO (최고투자책임자)',  focus: 'AI 기반 투자 의사결정 · 투자 인프라 · 리스크 관리' },
-  { id: 'MD',   label: 'MD (투자담당)',         focus: '직접 투자 실행 · 포트폴리오 운용 · 딜소싱 · 밸류에이션' },
-  { id: 'CFO',  label: 'CFO (최고재무책임자)',  focus: '재무 전략 · 자본 배분 · 투자자 관계' },
-  { id: 'CAIO', label: 'CAIO (최고AI책임자)',   focus: 'AI 전략 수립 · AI 조직 구축 · 기술-비즈니스 연결' },
-  { id: 'AIDT', label: 'AI/DT 담당',            focus: 'AI/DT 실행 · 내부 시스템 혁신 · 데이터 전략' },
-  { id: 'CISO', label: 'CISO (정보보호담당)',   focus: '사이버 보안 · 정보 보호 체계 · 보안 리스크 관리' },
-  { id: 'CHRO', label: 'CHRO (최고인사책임자)', focus: '인재 전략 · 조직 문화 · 리더십 개발' },
-  { id: 'CSO',  label: 'CSO (최고전략책임자)',  focus: '중장기 전략 · 시장 분석 · M&A · 신사업' },
-  { id: 'CLO',  label: 'CLO (최고법무책임자)',  focus: '법무 리스크 · 컴플라이언스 · 지배구조' },
-  { id: 'CIRO', label: 'CIRO (최고IR책임자)',   focus: 'IR 전략 · 투자자 관계 · ESG 공시 · 자본시장 커뮤니케이션' },
+  { id: 'CIO',  label: 'CIO (최고투자책임자)', focus: 'AI 기반 투자 의사결정 · 투자 인프라 · 리스크 관리' },
+  { id: 'MD',   label: 'MD (투자)',            focus: '직접 투자 실행 · 포트폴리오 운용 · 딜소싱 · 밸류에이션' },
+  { id: 'CAIO', label: 'AI혁신담당',           focus: 'AI 전략 수립 · AI 조직 구축 · 기술-비즈니스 연결' },
+  { id: 'AIDT', label: 'AI/DT담당',            focus: 'AI/DT 실행 · 내부 시스템 혁신 · 데이터 전략' },
+  { id: 'CISO', label: '정보보호담당',          focus: '사이버 보안 · 정보 보호 체계 · 보안 리스크 관리' },
+  { id: 'CSO',  label: '전략담당',             focus: '중장기 전략 · 시장 분석 · M&A · 신사업' },
+  { id: 'CFO',  label: '재무담당',             focus: '재무 전략 · 자본 배분 · 투자자 관계' },
+  { id: 'CLO',  label: '법무담당',             focus: '법무 리스크 · 컴플라이언스 · 지배구조' },
+  { id: 'CIRO', label: 'IR담당',               focus: 'IR 전략 · 투자자 관계 · ESG 공시 · 자본시장 커뮤니케이션' },
+  { id: 'CHRO', label: 'HR담당',               focus: '인재 전략 · 조직 문화 · 리더십 개발' },
 ]
 
 const BASE_WEIGHTS: Record<string, Record<string, number>> = {
