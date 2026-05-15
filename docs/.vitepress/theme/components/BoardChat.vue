@@ -81,7 +81,7 @@
           <div class="bubble-meta">
             <strong class="guru-name">{{ boardName(block.board) }}</strong>
             <span class="stance-badge" :class="readinessClass(block.stance)">{{ block.stance }}</span>
-            <span v-if="block.changed" class="stance-changed">↓ 변경</span>
+            <span v-if="block.changed" class="stance-changed">{{ block.changed === 'up' ? '↑ 상향' : '↓ 하향' }}</span>
           </div>
           <div class="bubble-text">{{ block.text }}</div>
         </div>
@@ -142,7 +142,7 @@ interface Block {
   label?: string
   board?: string
   stance?: string
-  changed?: boolean
+  changed?: 'up' | 'down'
   text?: string
   tension?: string
   messages?: Message[]

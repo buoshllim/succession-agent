@@ -169,6 +169,10 @@ const debate = {
       text: "이사 평가 내용..."
     },
     // ... 나머지 이사들
+    // Round 1 → Round 2에서 스탠스가 바뀐 이사만 changed 필드 추가:
+    // changed: 'up'  → ↑ 상향 (Not Ready→Ready in 2Y, Ready in 2Y→Ready Now)
+    // changed: 'down' → ↓ 하향 (Ready Now→Ready in 2Y, Ready in 2Y→Not Ready)
+    // 유지된 이사는 changed 생략
     { type: "section", label: "── Round 2: 긴장 쌍 토론 ──" },
     {
       type: "exchange",
