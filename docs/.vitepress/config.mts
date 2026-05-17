@@ -31,6 +31,37 @@ export default defineConfig({
           ]
         }
       ],
+      '/succession/board/principles': [
+        {
+          text: '에이전트 이사회',
+          items: [
+            { text: '🏛️ 이사회 현황', link: '/succession/board/' },
+            { text: '👥 이사회 멤버', link: '/succession/members/' },
+            { text: '📐 운영 철학과 기준', link: '/succession/board/principles' },
+          ]
+        },
+        {
+          text: '이사회 의장',
+          items: [
+            { text: 'JK (CEO)', link: '/succession/members/jk' },
+          ]
+        },
+        {
+          text: '에이전트 이사 (10인)',
+          items: [
+            { text: 'Jensen Huang', link: '/succession/members/vision-jensen' },
+            { text: 'Jeff Bezos', link: '/succession/members/scale-bezos' },
+            { text: 'Warren Buffett', link: '/succession/members/integrity-buffett' },
+            { text: 'Ray Dalio', link: '/succession/members/principles-dalio' },
+            { text: 'Satya Nadella', link: '/succession/members/transform-nadella' },
+            { text: 'Cathie Wood', link: '/succession/members/innovation-wood' },
+            { text: 'Jack Welch', link: '/succession/members/performance-welch' },
+            { text: 'Charlie Munger', link: '/succession/members/inversion-munger' },
+            { text: 'Elon Musk', link: '/succession/members/execution-musk' },
+            { text: 'Sheryl Sandberg', link: '/succession/members/lean-sandberg' },
+          ]
+        }
+      ],
       '/succession/board/': [
         {
           text: '에이전트 이사회',
@@ -78,37 +109,6 @@ export default defineConfig({
             { text: '법무담당', link: '/succession/debate/clo' },
             { text: 'IR담당', link: '/succession/debate/ciro' },
             { text: 'HR담당', link: '/succession/debate/chro' },
-          ]
-        }
-      ],
-      '/succession/board/principles': [
-        {
-          text: '에이전트 이사회',
-          items: [
-            { text: '🏛️ 이사회 현황', link: '/succession/board/' },
-            { text: '👥 이사회 멤버', link: '/succession/members/' },
-            { text: '📐 운영 철학과 기준', link: '/succession/board/principles' },
-          ]
-        },
-        {
-          text: '이사회 의장',
-          items: [
-            { text: 'JK (CEO)', link: '/succession/members/jk' },
-          ]
-        },
-        {
-          text: '에이전트 이사 (10인)',
-          items: [
-            { text: 'Jensen Huang', link: '/succession/members/vision-jensen' },
-            { text: 'Jeff Bezos', link: '/succession/members/scale-bezos' },
-            { text: 'Warren Buffett', link: '/succession/members/integrity-buffett' },
-            { text: 'Ray Dalio', link: '/succession/members/principles-dalio' },
-            { text: 'Satya Nadella', link: '/succession/members/transform-nadella' },
-            { text: 'Cathie Wood', link: '/succession/members/innovation-wood' },
-            { text: 'Jack Welch', link: '/succession/members/performance-welch' },
-            { text: 'Charlie Munger', link: '/succession/members/inversion-munger' },
-            { text: 'Elon Musk', link: '/succession/members/execution-musk' },
-            { text: 'Sheryl Sandberg', link: '/succession/members/lean-sandberg' },
           ]
         }
       ],
