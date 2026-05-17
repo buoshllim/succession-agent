@@ -315,11 +315,28 @@ body {
 /* ── 홈 커스텀 레이아웃 ── */
 
 /* 하단 좌우 분할 */
+.board-hero-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.board-hero-row .board-hero-card {
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .board-hero-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 .home-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   padding-bottom: 24px;
+  align-items: start;
 }
 
 .home-split-col {
