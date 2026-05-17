@@ -19,6 +19,7 @@
         </span>
         <span class="wb-phase-text">{{ p.desc }}</span>
       </div>
+      <div class="wb-phase-divider"></div>
       <div class="wb-phase-adjust">
         <span v-for="(delta, key) in combinedAdjust" :key="key" class="wb-adjust-chip" :class="(delta as number) > 0 ? 'up' : 'down'">
           {{ BOARD_NAMES[key as string] }} {{ (delta as number) > 0 ? '▲' : '▼' }}{{ Math.abs((delta as number) * 100).toFixed(0) }}%p
@@ -291,6 +292,11 @@ const maxWeight = computed(() =>
   color: var(--vp-c-text-2);
   line-height: 1.5;
 }
+.wb-phase-divider {
+  border-top: 1px solid var(--vp-c-divider);
+  margin: 10px 0 8px;
+}
+
 .wb-phase-adjust {
   display: flex;
   flex-wrap: wrap;
