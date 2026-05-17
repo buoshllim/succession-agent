@@ -1619,7 +1619,7 @@ body {
 .position-card-footer { display: flex; gap: 8px; }
 /* 이사회 심의 기준 아코디언 */
 details.wb-guide {
-  margin: 12px 0 20px;
+  margin: 4px 0 8px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-soft);
