@@ -1,5 +1,5 @@
 {
-  "name": "succession-brief",
+  "name": "succession-agent",
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vitepress dev docs",
