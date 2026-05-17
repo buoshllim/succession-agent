@@ -64,10 +64,10 @@
               ></div>
             </div>
             <div class="wb-bar-value" :class="{ zero: item.weight === 0 }">
-              <span>{{ item.weight > 0 ? (item.weight * 100).toFixed(0) + '%' : '—' }}</span>
               <span v-if="item.delta !== 0" class="wb-delta" :class="item.delta > 0 ? 'up' : 'down'">
-                {{ item.delta > 0 ? '▲' : '▼' }}{{ Math.abs(item.delta * 100).toFixed(0) }}
+                ({{ item.delta > 0 ? '▲' : '▼' }}{{ Math.abs(item.delta * 100).toFixed(0) }})
               </span>
+              <span>{{ item.weight > 0 ? (item.weight * 100).toFixed(0) + '%' : '—' }}</span>
             </div>
           </div>
         </TransitionGroup>
