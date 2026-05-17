@@ -34,7 +34,7 @@
           <span class="drawer-label">포지션별</span>
           <nav class="drawer-links">
             <a v-for="p in positions" :key="p.link" :href="p.link" @click="open = false">
-              {{ p.name }}<span>{{ p.sub }}</span>
+              {{ p.name }}
             </a>
           </nav>
         </div>
@@ -45,6 +45,7 @@
           <nav class="drawer-links">
             <a href="/succession/board/" @click="open = false">🏛️ 이사회 현황</a>
             <a href="/succession/members/" @click="open = false">👥 이사회 멤버</a>
+            <a href="/succession/board/principles" @click="open = false">📐 운영 철학과 기준</a>
           </nav>
         </div>
       </div>
@@ -60,16 +61,16 @@ const { isDark } = useData()
 const open = ref(false)
 
 const positions = [
-  { name: 'CIO',    sub: '', link: '/succession/cio' },
-  { name: '투자MD', sub: '',           link: '/succession/md' },
-  { name: 'AI혁신', sub: 'AI혁신담당',     link: '/succession/caio' },
-  { name: 'AI/DT',  sub: 'AI/DT담당',     link: '/succession/aidt' },
-  { name: '정보보호', sub: '정보보호담당', link: '/succession/ciso' },
-  { name: '전략',   sub: '전략담당',       link: '/succession/cso' },
-  { name: '재무',   sub: '재무담당',       link: '/succession/cfo' },
-  { name: '법무',   sub: '법무담당',       link: '/succession/clo' },
-  { name: 'IR',     sub: 'IR담당',         link: '/succession/ciro' },
-  { name: 'HR',     sub: 'HR담당',         link: '/succession/chro' },
+  { name: 'CIO',      link: '/succession/debate/cio' },
+  { name: '투자MD',   link: '/succession/debate/md' },
+  { name: 'AI혁신담당', link: '/succession/debate/caio' },
+  { name: 'AI/DT담당', link: '/succession/debate/aidt' },
+  { name: '정보보호담당', link: '/succession/debate/ciso' },
+  { name: '전략담당', link: '/succession/debate/cso' },
+  { name: '재무담당', link: '/succession/debate/cfo' },
+  { name: '법무담당', link: '/succession/debate/clo' },
+  { name: 'IR담당',   link: '/succession/debate/ciro' },
+  { name: 'HR담당',   link: '/succession/debate/chro' },
 ]
 </script>
 
