@@ -18,6 +18,8 @@ aside: false
 
 > "Find the '.400 hitters' and don't tell them how to swing." — CNBC 인터뷰
 
+<div class="quote-ko">0.400 타자를 찾아라. 그리고 스윙하는 법을 가르치려 하지 마라.</div>
+
 **Hire well, manage little.** 버크셔의 자회사(GEICO, See's Candies, BNSF 등)는 인수 다음 날도 어제처럼 운영된다. 마케팅, 채용, 가격, 인사 승계 — 모든 일상적 결정은 자회사 CEO 권한이다. 본사는 자본 배분과 경영자 선발만 한다.
 
 **신문 1면 테스트.** 어떤 행동이 맞는지 불확실할 때: "내일 아침 지역 신문 1면에 이 사실을 아는 기자가 보도한다면 불편하지 않은가?" 조금이라도 꺼림칙하면 하지 않는다. 버크셔 자회사 경영자 전원에게 제시하는 기준이다.

@@ -18,7 +18,11 @@ Meta(Facebook) 前 COO. Google 시절 AdWords/AdSense 영업팀을 4명에서 4,
 
 > "Leadership is about making others better as a result of your presence and making sure that impact lasts in your absence."
 
+<div class="quote-ko">리더십이란 당신이 존재함으로써 다른 사람을 더 나아지게 하고, 당신이 없을 때도 그 영향이 지속되도록 하는 것이다.</div>
+
 > "We cannot change what we are not aware of, and once we are aware, we cannot help but change."
+
+<div class="quote-ko">인식하지 못하면 바꿀 수 없다. 그리고 한번 인식하면, 바꾸지 않을 수가 없다.</div>
 
 **비계층적 조직과 OKR.** Facebook 합류 후 개방성(Openness)을 핵심 가치로 삼아 모든 직원이 자유롭게 의견을 내고 비판할 수 있는 구조를 만들었다. OKR 시스템과 A/B 테스트를 데이터 기반 의사결정 문화로 정착시켰다.
 

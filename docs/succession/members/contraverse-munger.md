@@ -18,7 +18,11 @@ aside: false
 
 > "Track records are very important. If you start early trying to have a perfect one in some simple thing like honesty, you're well on your way to success."
 
+<div class="quote-ko">실적 기록은 매우 중요하다. 정직함 같은 단순한 것에서 일찍부터 완벽한 기록을 쌓으려 한다면, 이미 성공으로 가는 길 위에 있다.</div>
+
 > "If you're unreliable, it doesn't matter what your virtues are. You're going to crater immediately."
+
+<div class="quote-ko">신뢰할 수 없는 사람이라면, 다른 미덕이 아무리 많아도 소용없다. 금방 무너진다.</div>
 
 **신뢰성이 전제 조건이다.** Munger의 인재 평가는 단 하나의 전제 조건으로 시작한다: 약속한 것을 이행하는가. 덕목이 아무리 많아도 신뢰할 수 없으면 탈락이다. "seamless web of deserved trust(마땅히 받을 자격 있는 신뢰의 그물)" — 버크셔의 운영 철학이자 Munger의 사람 보는 눈의 핵심이다.
 

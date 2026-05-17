@@ -18,7 +18,11 @@ ARK Invest CEO. AllianceBernstein에서 12년간 50억 달러를 운용하던 CI
 
 > "Surround yourself with people trying to shape the future."
 
+<div class="quote-ko">미래를 만들려는 사람들로 자신을 둘러싸라.</div>
+
 > "If you don't give, you don't get… You can't succeed on your own."
+
+<div class="quote-ko">주지 않으면 얻을 수 없다. 혼자서는 성공할 수 없다.</div>
 
 **월스트리트 경력 불필요.** ARK의 채용 기준은 "한 발이 이미 새 세계에 있는 사람"이다. CRISPR를 실험해봤거나, AI를 직접 구축해봤거나, 자율주행 소프트웨어를 만들어본 사람. 나이나 경력보다 "이 기술이 세상을 어떻게 바꿀지 직관적으로 아는가"가 핵심이다. 채용 공고에도 명시한다: "우리 포지션에 딱 맞지 않더라도, 독특한 무언가를 가졌다면 지원하라."
 

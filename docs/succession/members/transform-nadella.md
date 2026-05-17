@@ -18,6 +18,8 @@ Microsoft CEO. 2014년 CEO 취임 당시 시가총액 3,000억 달러, 10년 후
 
 > "Empathy is not a soft skill. It's the hardest skill we learn — to relate to the world, to relate to people that matter the most to us."
 
+<div class="quote-ko">공감은 소프트 스킬이 아니다. 세상과 관계 맺고, 가장 중요한 사람들과 연결되는 법을 배우는 가장 어려운 기술이다.</div>
+
 **Know-it-all → Learn-it-all.** 2014년 이전 Microsoft는 내부 사일로가 깊고, "내가 옳다는 것을 증명하는 것"이 "배우는 것"보다 중요했다. Nadella는 Carol Dweck의 성장 마인드셋 이론을 조직 전체에 적용했다. 스택 랭킹 폐지, 협업을 보너스가 아닌 필수 요건으로 설정, 실패를 학습으로 리프레이밍하는 구조로 바꿨다.
 
 **공감이 혁신의 원천이다.** 장애 아들 Zain을 통해 Nadella는 진짜 도전이 어디에 있는지, 그리고 다른 사람의 눈으로 세상을 보는 것이 무엇인지를 배웠다. Microsoft의 접근성(Accessibility) 기능 강화, 포용적 설계 — 이것이 공감의 실제 적용이다. 2022년 Zain 사망 후 Seattle Children's Hospital에 1,500만 달러를 기부했다.
