@@ -20,12 +20,6 @@
         </span>
         <span class="wb-phase-text">{{ p.desc }}</span>
       </div>
-      <div class="wb-phase-divider"></div>
-      <div class="wb-phase-adjust">
-        <span v-for="(delta, key) in combinedAdjust" :key="key" class="wb-adjust-chip" :class="(delta as number) > 0 ? 'up' : 'down'">
-          {{ BOARD_NAMES[key as string] }} {{ (delta as number) > 0 ? '▲' : '▼' }}{{ Math.abs((delta as number) * 100).toFixed(0) }}%p
-        </span>
-      </div>
     </div>
 
     <!-- ── 포지션 탭 ── -->
@@ -45,6 +39,13 @@
       <div class="wb-pos-header">
         <span class="wb-pos-title">{{ currentPosition.label }}</span>
         <span class="wb-pos-focus">{{ currentPosition.focus }}</span>
+      </div>
+
+      <!-- 국면 조정 요약 -->
+      <div v-if="Object.keys(combinedAdjust).length" class="wb-phase-adjust">
+        <span v-for="(delta, key) in combinedAdjust" :key="key" class="wb-adjust-chip" :class="(delta as number) > 0 ? 'up' : 'down'">
+          {{ BOARD_NAMES[key as string] }} {{ (delta as number) > 0 ? '▲' : '▼' }}{{ Math.abs((delta as number) * 100).toFixed(0) }}%p
+        </span>
       </div>
 
       <!-- 이사별 가중치 바 -->
