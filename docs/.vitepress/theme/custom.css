@@ -299,7 +299,7 @@ body {
 .VPDocFooter,
 .VPDocAsideOutline,
 .VPLocalNavOutlineDropdown,
-.VPLocalNav.empty {
+.VPLocalNav {
   display: none !important;
 }
 
