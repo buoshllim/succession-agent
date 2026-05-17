@@ -106,7 +106,7 @@ export default defineConfig({
             { text: 'Satya Nadella', link: '/succession/members/transform-nadella' },
             { text: 'Cathie Wood', link: '/succession/members/innovation-wood' },
             { text: 'Jack Welch', link: '/succession/members/performance-welch' },
-            { text: 'Charlie Munger', link: '/succession/members/contraverse-munger' },
+            { text: 'Charlie Munger', link: '/succession/members/inversion-munger' },
             { text: 'Elon Musk', link: '/succession/members/execution-musk' },
             { text: 'Sheryl Sandberg', link: '/succession/members/lean-sandberg' },
           ]

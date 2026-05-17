@@ -95,12 +95,12 @@ const PHASES = [
   {
     id: 'nav-resolve', label: 'NAV 할인 해소기', color: '#2563EB',
     desc: 'Korea Discount 정책 + 주주환원 공약 집행 구간. 재무·법무·IR 역량을 우선시한다.',
-    adjust: { 'integrity-buffett': +0.03, 'contraverse-munger': +0.02, 'principles-dalio': +0.02, 'vision-jensen': -0.02, 'innovation-wood': -0.02, 'execution-musk': -0.02 }
+    adjust: { 'integrity-buffett': +0.03, 'inversion-munger': +0.02, 'principles-dalio': +0.02, 'vision-jensen': -0.02, 'innovation-wood': -0.02, 'execution-musk': -0.02 }
   },
   {
     id: 'portfolio', label: '포트폴리오 재편기', color: '#D97706',
     desc: '비핵심 자산(11번가 등) 정리, AI 포트폴리오 집중 구간. 전략·M&A 역량을 우선시한다.',
-    adjust: { 'scale-bezos': +0.03, 'transform-nadella': +0.02, 'contraverse-munger': +0.02, 'innovation-wood': -0.02, 'vision-jensen': -0.02, 'execution-musk': -0.02 }
+    adjust: { 'scale-bezos': +0.03, 'transform-nadella': +0.02, 'inversion-munger': +0.02, 'innovation-wood': -0.02, 'vision-jensen': -0.02, 'execution-musk': -0.02 }
   },
   {
     id: 'new-invest', label: '신규 투자 개척기', color: '#7C3AED',
@@ -110,7 +110,7 @@ const PHASES = [
   {
     id: 'downcycle', label: '다운사이클 대응기', color: '#DC2626',
     desc: '반도체 사이클 전환 시 리스크 관리, 유동성 방어 구간. 원칙·역발상 역량을 우선시한다.',
-    adjust: { 'principles-dalio': +0.03, 'contraverse-munger': +0.02, 'integrity-buffett': +0.02, 'innovation-wood': -0.03, 'execution-musk': -0.02, 'vision-jensen': -0.02 }
+    adjust: { 'principles-dalio': +0.03, 'inversion-munger': +0.02, 'integrity-buffett': +0.02, 'innovation-wood': -0.03, 'execution-musk': -0.02, 'vision-jensen': -0.02 }
   },
 ]
 
@@ -136,7 +136,7 @@ const BASE_WEIGHTS: Record<string, Record<string, number>> = {
   'transform-nadella':  { CIO:0.10, MD:0.05, CFO:0.05, CAIO:0.15, AIDT:0.18, CISO:0.05, CHRO:0.28, CSO:0.07, CLO:0.05, CIRO:0.07 },
   'innovation-wood':    { CIO:0.12, MD:0.08, CFO:0.00, CAIO:0.18, AIDT:0.15, CISO:0.00, CHRO:0.00, CSO:0.15, CLO:0.00, CIRO:0.08 },
   'performance-welch':  { CIO:0.05, MD:0.10, CFO:0.07, CAIO:0.05, AIDT:0.05, CISO:0.10, CHRO:0.22, CSO:0.02, CLO:0.07, CIRO:0.05 },
-  'contraverse-munger': { CIO:0.03, MD:0.08, CFO:0.15, CAIO:0.03, AIDT:0.05, CISO:0.22, CHRO:0.04, CSO:0.03, CLO:0.25, CIRO:0.08 },
+  'inversion-munger': { CIO:0.03, MD:0.08, CFO:0.15, CAIO:0.03, AIDT:0.05, CISO:0.22, CHRO:0.04, CSO:0.03, CLO:0.25, CIRO:0.08 },
   'execution-musk':     { CIO:0.00, MD:0.00, CFO:0.00, CAIO:0.22, AIDT:0.20, CISO:0.00, CHRO:0.00, CSO:0.05, CLO:0.00, CIRO:0.00 },
   'lean-sandberg':      { CIO:0.00, MD:0.00, CFO:0.03, CAIO:0.05, AIDT:0.05, CISO:0.03, CHRO:0.25, CSO:0.05, CLO:0.05, CIRO:0.08 },
 }
@@ -149,7 +149,7 @@ const BOARD_META: Record<string, { name: string; color: string }> = {
   'transform-nadella':  { name: 'Transform · Nadella', color: '#00A4EF' },
   'innovation-wood':    { name: 'Innovation · Wood',   color: '#7C3AED' },
   'performance-welch':  { name: 'Performance · Welch', color: '#059669' },
-  'contraverse-munger': { name: 'Inversion · Munger', color: '#D97706' },
+  'inversion-munger': { name: 'Inversion · Munger', color: '#D97706' },
   'execution-musk':     { name: 'Execution · Musk',   color: '#DC2626' },
   'lean-sandberg':      { name: 'Lean · Sandberg',     color: '#14B8A6' },
 }

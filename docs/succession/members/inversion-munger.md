@@ -4,7 +4,7 @@ aside: false
 ---
 
 <div class="member-hero">
-  <img src="/board/contraverse-munger.png" class="member-avatar" alt="Charlie Munger" />
+  <img src="/board/inversion-munger.png" class="member-avatar" alt="Charlie Munger" />
   <div class="member-hero-info">
     <h1 class="member-name">Charlie Munger</h1>
     <p class="member-role">Inversion · Bias</p>

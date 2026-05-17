@@ -96,8 +96,8 @@ aside: false
     </div>
   </a>
 
-  <a href="/succession/members/contraverse-munger" class="guru-card">
-    <img src="/board/contraverse-munger.png" class="guru-card-avatar" alt="Charlie Munger" />
+  <a href="/succession/members/inversion-munger" class="guru-card">
+    <img src="/board/inversion-munger.png" class="guru-card-avatar" alt="Charlie Munger" />
     <div class="guru-card-body">
       <div class="guru-card-role">Inversion · Bias</div>
       <span class="guru-card-skms">리스크 감지</span>
