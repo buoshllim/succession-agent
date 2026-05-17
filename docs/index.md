@@ -29,6 +29,14 @@ sidebar: false
       </div>
       <span class="board-hero-arrow">→</span>
     </a>
+    <a href="/succession/board/principles" class="board-hero-card board-hero-card--secondary">
+      <span class="board-hero-icon">📐</span>
+      <div class="board-hero-body">
+        <div class="board-hero-title">운영 철학과 기준</div>
+        <div class="board-hero-desc">심의 원칙 · 국면별 가중치 기준</div>
+      </div>
+      <span class="board-hero-arrow">→</span>
+    </a>
   </div>
 </div>
 
