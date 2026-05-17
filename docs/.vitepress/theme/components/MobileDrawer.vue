@@ -29,13 +29,11 @@
           </button>
         </div>
 
-        <!-- 포지션별 -->
+        <!-- 포지션별 심의 -->
         <div class="drawer-section">
-          <span class="drawer-label">포지션별</span>
+          <span class="drawer-label">포지션별 심의</span>
           <nav class="drawer-links">
-            <a v-for="p in positions" :key="p.link" :href="p.link" @click="open = false">
-              {{ p.name }}
-            </a>
+            <a href="/succession/list" @click="open = false">전체 심의 이력 →</a>
           </nav>
         </div>
 
@@ -60,18 +58,6 @@ import { useData } from 'vitepress'
 const { isDark } = useData()
 const open = ref(false)
 
-const positions = [
-  { name: 'CIO',      link: '/succession/debate/cio' },
-  { name: '투자MD',   link: '/succession/debate/md' },
-  { name: 'AI혁신담당', link: '/succession/debate/caio' },
-  { name: 'AI/DT담당', link: '/succession/debate/aidt' },
-  { name: '정보보호담당', link: '/succession/debate/ciso' },
-  { name: '전략담당', link: '/succession/debate/cso' },
-  { name: '재무담당', link: '/succession/debate/cfo' },
-  { name: '법무담당', link: '/succession/debate/clo' },
-  { name: 'IR담당',   link: '/succession/debate/ciro' },
-  { name: 'HR담당',   link: '/succession/debate/chro' },
-]
 </script>
 
 <style scoped>

@@ -298,8 +298,12 @@ body {
 .VPFeatures,
 .VPDocFooter,
 .VPDocAsideOutline,
-.VPLocalNavOutlineDropdown,
-.VPLocalNav {
+.VPLocalNavOutlineDropdown {
+  display: none !important;
+}
+
+/* 홈(layout:page, sidebar 없음)에서만 VPLocalNav 숨김 — 내부 페이지 사이드바 버튼은 유지 */
+.VPLocalNav.empty.fixed {
   display: none !important;
 }
 
