@@ -8,19 +8,20 @@
         <button
           v-for="p in PHASES" :key="p.id"
           class="wb-phase-btn"
-          :class="{ active: phase === p.id }"
-          @click="setPhase(p.id)"
+          :class="{ active: phases.includes(p.id) }"
+          :style="phases.includes(p.id) ? { background: p.color, borderColor: p.color } : {}"
+          @click="togglePhase(p.id)"
         >{{ p.label }}</button>
       </div>
-      <div class="wb-phase-desc">
-        <span class="wb-phase-badge" :style="{ background: currentPhase.color + '22', color: currentPhase.color }">
-          {{ currentPhase.label }}
+      <div v-for="p in activePhases" :key="p.id" class="wb-phase-desc">
+        <span class="wb-phase-badge" :style="{ background: p.color + '22', color: p.color }">
+          {{ p.label }}
         </span>
-        <span class="wb-phase-text">{{ currentPhase.desc }}</span>
+        <span class="wb-phase-text">{{ p.desc }}</span>
       </div>
       <div class="wb-phase-adjust">
-        <span v-for="(delta, key) in currentPhase.adjust" :key="key" class="wb-adjust-chip" :class="delta > 0 ? 'up' : 'down'">
-          {{ BOARD_NAMES[key] }} {{ delta > 0 ? '▲' : '▼' }}{{ Math.abs(delta * 100).toFixed(0) }}%p
+        <span v-for="(delta, key) in combinedAdjust" :key="key" class="wb-adjust-chip" :class="(delta as number) > 0 ? 'up' : 'down'">
+          {{ BOARD_NAMES[key as string] }} {{ (delta as number) > 0 ? '▲' : '▼' }}{{ Math.abs((delta as number) * 100).toFixed(0) }}%p
         </span>
       </div>
     </div>
@@ -80,34 +81,34 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-const phase    = ref('ai-dt')
+const phases   = ref<string[]>(['supercycle'])   // 멀티셀렉트
 const position = ref('CIO')
 
 const PHASES = [
   {
-    id: 'ai-dt', label: 'AI/DT 전환기', color: '#6366F1',
-    desc: 'AI와 디지털 전환이 핵심 과제. 기술 이해력과 변화 적응 속도를 우선시한다.',
-    adjust: { 'vision-jensen': +0.03, 'transform-nadella': +0.02, 'performance-welch': -0.03, 'contraverse-munger': +0.02 }
+    id: 'supercycle', label: 'AI·반도체 슈퍼사이클', color: '#047857',
+    desc: 'HBM·AI 투자 집행, SK하이닉스 NAV 극대화 구간. AI 비전과 실행력을 우선시한다.',
+    adjust: { 'vision-jensen': +0.03, 'innovation-wood': +0.02, 'execution-musk': +0.02, 'principles-dalio': -0.02, 'performance-welch': -0.02, 'lean-sandberg': -0.02 }
   },
   {
-    id: 'ma', label: 'M&A 통합기', color: '#F59E0B',
-    desc: 'M&A 이후 조직 통합. 문화 통합력과 신뢰 기반 리더십이 핵심이다.',
-    adjust: { 'transform-nadella': +0.03, 'integrity-buffett': +0.02, 'execution-musk': -0.03, 'vision-jensen': -0.02 }
+    id: 'nav-resolve', label: 'NAV 할인 해소기', color: '#2563EB',
+    desc: 'Korea Discount 정책 + 주주환원 공약 집행 구간. 재무·법무·IR 역량을 우선시한다.',
+    adjust: { 'integrity-buffett': +0.03, 'contraverse-munger': +0.02, 'principles-dalio': +0.02, 'vision-jensen': -0.02, 'innovation-wood': -0.02, 'execution-musk': -0.02 }
   },
   {
-    id: 'new-biz', label: '신사업 개척기', color: '#10B981',
-    desc: '새로운 시장 진입 또는 사업 모델 혁신. 전략적 차별화와 기술 비전이 중요하다.',
-    adjust: { 'innovation-wood': +0.03, 'vision-jensen': +0.02, 'performance-welch': -0.03, 'scale-bezos': -0.02 }
+    id: 'portfolio', label: '포트폴리오 재편기', color: '#D97706',
+    desc: '비핵심 자산(11번가 등) 정리, AI 포트폴리오 집중 구간. 전략·M&A 역량을 우선시한다.',
+    adjust: { 'scale-bezos': +0.03, 'transform-nadella': +0.02, 'contraverse-munger': +0.02, 'innovation-wood': -0.02, 'vision-jensen': -0.02, 'execution-musk': -0.02 }
   },
   {
-    id: 'efficiency', label: '비용 효율화기', color: '#EF4444',
-    desc: '수익성 개선과 운영 효율화. 성과 중심 관리와 원칙 기반 의사결정이 핵심이다.',
-    adjust: { 'performance-welch': +0.03, 'principles-dalio': +0.02, 'vision-jensen': -0.03, 'scale-bezos': -0.02 }
+    id: 'new-invest', label: '신규 투자 개척기', color: '#7C3AED',
+    desc: 'T&G스퀘어 통한 VC 딜소싱, 해외 AI 투자 확대 구간. 투자·혁신 역량을 우선시한다.',
+    adjust: { 'innovation-wood': +0.03, 'vision-jensen': +0.02, 'execution-musk': +0.02, 'performance-welch': -0.02, 'integrity-buffett': -0.02, 'lean-sandberg': -0.02 }
   },
   {
-    id: 'crisis', label: '위기 관리기', color: '#8B5CF6',
-    desc: '경영 위기 또는 외부 충격 대응. 리스크 관리와 역발상적 판단이 최우선이다.',
-    adjust: { 'principles-dalio': +0.03, 'contraverse-munger': +0.02, 'scale-bezos': -0.02, 'execution-musk': -0.03 }
+    id: 'downcycle', label: '다운사이클 대응기', color: '#DC2626',
+    desc: '반도체 사이클 전환 시 리스크 관리, 유동성 방어 구간. 원칙·역발상 역량을 우선시한다.',
+    adjust: { 'principles-dalio': +0.03, 'contraverse-munger': +0.02, 'integrity-buffett': +0.02, 'innovation-wood': -0.03, 'execution-musk': -0.02, 'vision-jensen': -0.02 }
   },
 ]
 
@@ -155,12 +156,35 @@ const BOARD_NAMES: Record<string, string> = Object.fromEntries(
   Object.entries(BOARD_META).map(([k, v]) => [k, v.name])
 )
 
-const currentPhase    = computed(() => PHASES.find(p => p.id === phase.value)!)
+// 선택된 모든 국면의 조정값을 합산
+const combinedAdjust = computed(() => {
+  const result: Record<string, number> = {}
+  for (const pid of phases.value) {
+    const p = PHASES.find(x => x.id === pid)
+    if (!p) continue
+    for (const [key, val] of Object.entries(p.adjust)) {
+      result[key] = (result[key] ?? 0) + (val as number)
+    }
+  }
+  return result
+})
+
+const activePhases    = computed(() => PHASES.filter(p => phases.value.includes(p.id)))
 const currentPosition = computed(() => POSITIONS.find(p => p.id === position.value)!)
+
+function togglePhase(id: string) {
+  const idx = phases.value.indexOf(id)
+  if (idx === -1) {
+    phases.value = [...phases.value, id]
+  } else if (phases.value.length > 1) {
+    phases.value = phases.value.filter(x => x !== id)
+  }
+  // 최소 1개 선택 유지
+}
 
 function adjustedWeight(key: string, pos: string): number {
   const base  = BASE_WEIGHTS[key]?.[pos] ?? 0
-  const delta = currentPhase.value.adjust[key] ?? 0
+  const delta = combinedAdjust.value[key] ?? 0
   return Math.max(0, base + (base > 0 ? delta : 0))
 }
 
@@ -202,9 +226,6 @@ const maxWeight = computed(() =>
   Math.max(...sortedBoards.value.map(i => i.weight), 0.01)
 )
 
-function setPhase(id: string) {
-  phase.value = id
-}
 </script>
 
 <style scoped>
