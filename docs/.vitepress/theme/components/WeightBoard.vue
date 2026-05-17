@@ -3,7 +3,7 @@
 
     <!-- ── 국면 선택 ── -->
     <div class="wb-phase-section">
-      <div class="wb-section-label">비즈니스 국면</div>
+      <div class="wb-section-label">비즈니스 국면 <span class="wb-section-hint">(멀티 셀렉트 가능)</span></div>
       <div class="wb-phase-tabs">
         <button
           v-for="p in PHASES" :key="p.id"
@@ -251,6 +251,15 @@ const maxWeight = computed(() =>
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 12px;
+}
+
+.wb-section-hint {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--vp-c-text-3);
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.75;
 }
 .wb-phase-tabs {
   display: flex;
