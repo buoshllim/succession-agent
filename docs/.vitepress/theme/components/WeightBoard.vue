@@ -54,7 +54,7 @@
             <div class="wb-bar-label">
               <img :src="`/board/${item.key}.png`" class="wb-avatar" :alt="item.name" />
               <span class="wb-name">{{ item.name }}</span>
-              <span v-if="item.rank <= 3 && item.weight > 0" class="wb-rank-badge">담당 {{ item.rank }}</span>
+              <span v-if="item.rank <= 3 && item.weight > 0" class="wb-rank-badge">{{ item.isTied ? '공동 ' : '' }}핵심 {{ item.rank }}</span>
             </div>
             <div class="wb-bar-track">
               <div
@@ -172,16 +172,29 @@ const sortedBoards = computed(() => {
     const delta = w - base
     return {
       key,
-      name:   BOARD_META[key].name,
-      color:  BOARD_META[key].color,
-      weight: w,
-      delta:  Math.abs(delta) > 0.001 ? delta : 0,
-      rank:   0,
+      name:    BOARD_META[key].name,
+      color:   BOARD_META[key].color,
+      weight:  w,
+      delta:   Math.abs(delta) > 0.001 ? delta : 0,
+      rank:    0,
+      isTied:  false,
     }
   })
   items.sort((a, b) => b.weight - a.weight)
-  let rank = 0
-  items.forEach(item => { item.rank = item.weight > 0 ? ++rank : 99 })
+  // 공동 순위 처리: 동점이면 같은 순위 부여 (standard competition ranking)
+  items.forEach((item, i) => {
+    if (item.weight === 0) {
+      item.rank = 99
+    } else if (i === 0 || item.weight !== items[i - 1].weight) {
+      item.rank = i + 1
+    } else {
+      item.rank = items[i - 1].rank
+    }
+  })
+  // 공동 순위 여부 체크
+  const rankCounts: Record<number, number> = {}
+  items.forEach(item => { if (item.rank < 99) rankCounts[item.rank] = (rankCounts[item.rank] || 0) + 1 })
+  items.forEach(item => { item.isTied = item.rank < 99 && (rankCounts[item.rank] ?? 1) > 1 })
   return items
 })
 
