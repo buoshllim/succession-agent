@@ -1,32 +1,121 @@
+---
+title: 이사회 현황
+aside: false
+---
+
 # 🏛️ 이사회 현황
 
-## 최근 심의
+10인 에이전트 이사가 다면 심의를 거쳐 도출한 포지션별 후보 준비도 기록.
 
-> 아직 심의 기록이 없습니다. 첫 심의를 실행하면 여기에 기록됩니다.
+## 최신 결의 현황
 
----
+<div class="position-card-grid">
 
-## 포지션별 현황
+  <div class="position-card">
+    <div class="position-card-header">
+      <span class="readiness-pill pending">⬜ 심의 대기</span>
+    </div>
+    <div class="position-card-name">CIO</div>
+    <div class="position-card-role">최고투자책임자</div>
+    <div class="readiness-wrap">
+      <div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div>
+      <span class="readiness-val">—</span>
+    </div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer">
+      <a href="/succession/debate/cio" class="position-btn">💬 회의록</a>
+      <a href="/succession/debate/cio" class="position-btn">📋 이력</a>
+    </div>
+  </div>
 
-| 포지션 | 현재 상태 | 마지막 심의 | 최종 결의 |
-|--------|---------|-----------|---------|
-| CIO | 심의 대기 | — | — |
-| 투자MD | 심의 대기 | — | — |
-| AI혁신담당 | 심의 대기 | — | — |
-| AI/DT담당 | 심의 대기 | — | — |
-| 정보보호담당 | 심의 대기 | — | — |
-| 전략담당 | 심의 대기 | — | — |
-| 재무담당 | 심의 대기 | — | — |
-| 법무담당 | 심의 대기 | — | — |
-| IR담당 | 심의 대기 | — | — |
-| HR담당 | 심의 대기 | — | — |
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">투자MD</div>
+    <div class="position-card-role">투자본부 MD</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/md" class="position-btn">💬 회의록</a><a href="/succession/debate/md" class="position-btn">📋 이력</a></div>
+  </div>
 
----
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">AI혁신담당</div>
+    <div class="position-card-role">Chief AI Innovation Officer</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/caio" class="position-btn">💬 회의록</a><a href="/succession/debate/caio" class="position-btn">📋 이력</a></div>
+  </div>
 
-## 준비도 기준
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">AI/DT담당</div>
+    <div class="position-card-role">AI·디지털전환 총괄</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/aidt" class="position-btn">💬 회의록</a><a href="/succession/debate/aidt" class="position-btn">📋 이력</a></div>
+  </div>
+
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">정보보호담당</div>
+    <div class="position-card-role">Chief Information Security Officer</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/ciso" class="position-btn">💬 회의록</a><a href="/succession/debate/ciso" class="position-btn">📋 이력</a></div>
+  </div>
+
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">전략담당</div>
+    <div class="position-card-role">Chief Strategy Officer</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/cso" class="position-btn">💬 회의록</a><a href="/succession/debate/cso" class="position-btn">📋 이력</a></div>
+  </div>
+
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">재무담당</div>
+    <div class="position-card-role">Chief Financial Officer</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/cfo" class="position-btn">💬 회의록</a><a href="/succession/debate/cfo" class="position-btn">📋 이력</a></div>
+  </div>
+
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">법무담당</div>
+    <div class="position-card-role">Chief Legal Officer</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/clo" class="position-btn">💬 회의록</a><a href="/succession/debate/clo" class="position-btn">📋 이력</a></div>
+  </div>
+
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">IR담당</div>
+    <div class="position-card-role">Chief Investor Relations Officer</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/ciro" class="position-btn">💬 회의록</a><a href="/succession/debate/ciro" class="position-btn">📋 이력</a></div>
+  </div>
+
+  <div class="position-card">
+    <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
+    <div class="position-card-name">HR담당</div>
+    <div class="position-card-role">Chief Human Resources Officer</div>
+    <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
+    <div class="position-card-date">심의 기록 없음</div>
+    <div class="position-card-footer"><a href="/succession/debate/chro" class="position-btn">💬 회의록</a><a href="/succession/debate/chro" class="position-btn">📋 이력</a></div>
+  </div>
+
+</div>
+
+## 준비도 범례
 
 | 준비도 | 기준 |
 |--------|------|
-| 🟢 Ready Now | 준비도 65% 이상 + 확신도 중간 이상 — 지금 당장 선임 가능 |
-| 🟡 Ready in 2Y | 준비도 40~64% — 2년 내 집중 육성 조건으로 준비 가능 |
-| 🔴 Not Ready | 준비도 39% 이하 — 추가 육성 또는 외부 영입 검토 필요 |
+| 🟢 Ready Now | 65% 이상 + 이사 확신도 중간↑ |
+| 🟡 Developing | 45~64% — 핵심 역량 개발 중 |
+| 🔴 Not Ready | 44% 이하 — 즉시 선임 불가 |
+| ⬜ 심의 대기 | 아직 심의 미실시 |

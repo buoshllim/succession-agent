@@ -1,12 +1,12 @@
 /* ── Pretendard 폰트 ── */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 
-/* ── Toss 색상 시스템 ── */
+/* ── 딥 에메랄드 색상 시스템 ── */
 :root {
-  --vp-c-brand-1: #0064FF;
-  --vp-c-brand-2: #1A75FF;
-  --vp-c-brand-3: #3385FF;
-  --vp-c-brand-soft: rgba(0, 100, 255, 0.08);
+  --vp-c-brand-1: #047857;
+  --vp-c-brand-2: #059669;
+  --vp-c-brand-3: #10B981;
+  --vp-c-brand-soft: rgba(4, 120, 87, 0.08);
 
   --vp-font-family-base: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
   --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
@@ -79,7 +79,7 @@ body {
   font-size: 52px;
   font-weight: 800;
   letter-spacing: -0.04em;
-  background: linear-gradient(135deg, #0064FF 0%, #00C2FF 100%);
+  background: linear-gradient(135deg, #047857 0%, #10B981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -93,8 +93,8 @@ body {
 }
 
 .VPHero .action .VPButton.brand {
-  background: #0064FF;
-  border-color: #0064FF;
+  background: #047857;
+  border-color: #047857;
   border-radius: 10px;
   font-weight: 600;
   padding: 10px 24px;
@@ -102,9 +102,9 @@ body {
 }
 
 .VPHero .action .VPButton.brand:hover {
-  background: #1A75FF;
+  background: #059669;
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(0, 100, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(4, 120, 87, 0.3);
 }
 
 /* ── Feature 카드 ── */
@@ -306,7 +306,7 @@ body {
 .VPNavBarTitle .title {
   font-weight: 800 !important;
   letter-spacing: -0.03em !important;
-  background: linear-gradient(135deg, #0064FF 0%, #00C2FF 100%);
+  background: linear-gradient(135deg, #047857 0%, #10B981 100%);
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -397,7 +397,7 @@ body {
 
 .stock-card-home:hover {
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 4px 16px rgba(0, 100, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(4, 120, 87, 0.1);
   transform: translateY(-1px);
 }
 
@@ -441,7 +441,7 @@ body {
 }
 .position-card-home:hover {
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 4px 16px rgba(0, 100, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(4, 120, 87, 0.1);
   transform: translateY(-1px);
 }
 .position-card-home .position-name {
@@ -689,7 +689,7 @@ body {
 
 .board-stock-card:hover {
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 2px 12px rgba(0, 100, 255, 0.08);
+  box-shadow: 0 2px 12px rgba(4, 120, 87, 0.08);
   transform: translateY(-1px);
 }
 
@@ -743,22 +743,28 @@ body {
 
 .guru-card:hover {
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 4px 16px rgba(0, 100, 255, 0.10);
+  box-shadow: 0 4px 16px rgba(4, 120, 87, 0.10);
   transform: translateY(-2px);
 }
 
 .guru-card-avatar {
-  width: 100%;
-  aspect-ratio: 1;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   display: block;
+  margin: 18px auto 0;
+  border: 2px solid var(--vp-c-divider);
 }
 
 .guru-card-body {
-  padding: 12px 14px;
+  padding: 10px 14px 16px;
   display: flex;
   flex-direction: column;
   gap: 3px;
+  align-items: center;
+  text-align: center;
 }
 
 .guru-card-name {
@@ -1015,7 +1021,7 @@ body {
 
 .stock-card:hover {
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 4px 16px rgba(0, 100, 255, 0.12);
+  box-shadow: 0 4px 16px rgba(4, 120, 87, 0.12);
   transform: translateY(-1px);
 }
 
@@ -1419,7 +1425,7 @@ body {
 }
 
 .exchange-msg.from-chair {
-  background: rgba(0, 100, 255, 0.03);
+  background: rgba(4, 120, 87, 0.03);
 }
 
 .exchange-speaker {
@@ -1432,8 +1438,8 @@ body {
 .chair-badge {
   font-size: 12px;
   font-weight: 700;
-  color: #0064FF;
-  background: rgba(0, 100, 255, 0.08);
+  color: #047857;
+  background: rgba(4, 120, 87, 0.08);
   padding: 2px 8px;
   border-radius: 999px;
 }
@@ -1551,3 +1557,53 @@ body {
   .bubble-body { padding: 10px 12px; }
   .exchange-text { padding-left: 0; }
 }
+
+/* ═══════════════════════════════════════
+   준비도 pill / 바 / 포지션 카드 그리드
+═══════════════════════════════════════ */
+
+/* 준비도 pill 색상 */
+.readiness-pill.ready-now  { background: #DCFCE7; color: #14532D; }
+.readiness-pill.developing { background: #FEF9C3; color: #713F12; }
+.readiness-pill.not-ready  { background: #FEE2E2; color: #7F1D1D; }
+.readiness-pill.pending    { background: #F3F4F6; color: #374151; }
+
+.dark .readiness-pill.ready-now  { background: #14532D; color: #DCFCE7; }
+.dark .readiness-pill.developing { background: #713F12; color: #FEF9C3; }
+.dark .readiness-pill.not-ready  { background: #7F1D1D; color: #FEE2E2; }
+.dark .readiness-pill.pending    { background: #374151; color: #F3F4F6; }
+
+/* 준비도 바 */
+.readiness-bar { background: var(--vp-c-bg-mute); border-radius: 4px; height: 6px; overflow: hidden; }
+.readiness-bar-fill { height: 100%; border-radius: 4px; background: var(--vp-c-brand-1); transition: width 0.3s ease; }
+
+/* 포지션 카드 그리드 */
+.position-card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin: 24px 0; }
+.position-card { border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 20px; background: var(--vp-c-bg-soft); transition: box-shadow 0.2s; }
+.position-card:hover { box-shadow: var(--vp-shadow-2); }
+.position-card-header { margin-bottom: 12px; }
+.position-card-name { font-size: 17px; font-weight: 700; color: var(--vp-c-text-1); margin-bottom: 2px; }
+.position-card-role { font-size: 12px; color: var(--vp-c-text-3); }
+.readiness-wrap { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
+.readiness-val { font-size: 13px; font-weight: 600; color: var(--vp-c-text-1); min-width: 36px; }
+.position-card-date { font-size: 12px; color: var(--vp-c-text-3); margin-bottom: 12px; }
+.position-card-footer { display: flex; gap: 8px; }
+.position-btn { flex: 1; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--vp-c-brand-1); color: var(--vp-c-brand-1); font-size: 13px; font-weight: 600; text-align: center; text-decoration: none; transition: all 0.15s; }
+.position-btn:hover { background: var(--vp-c-brand-1); color: #fff; }
+
+/* ═══════════════════════════════════════
+   홈 섹션
+═══════════════════════════════════════ */
+.home-section { max-width: 900px; margin: 40px auto; padding: 0 24px; }
+.home-section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.home-section h2 { font-size: 20px; font-weight: 700; margin: 0; }
+.home-section-links { display: flex; gap: 8px; }
+.home-link-btn { padding: 6px 14px; border-radius: 8px; border: 1px solid var(--vp-c-brand-1); color: var(--vp-c-brand-1); font-size: 13px; font-weight: 600; text-decoration: none; }
+.home-link-btn:hover { background: var(--vp-c-brand-1); color: #fff; }
+.home-section-desc { color: var(--vp-c-text-2); font-size: 14px; margin: 0 0 16px; }
+
+/* ═══════════════════════════════════════
+   전체 심의 이력 빈 상태
+═══════════════════════════════════════ */
+.al-container { padding: 40px 0; }
+.al-empty { text-align: center; color: var(--vp-c-text-3); font-size: 15px; }

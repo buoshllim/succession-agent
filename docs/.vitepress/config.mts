@@ -8,18 +8,9 @@ export default defineConfig({
   themeConfig: {
     nav: [
       {
-        text: '포지션별',
+        text: '심의 이력',
         items: [
-          { text: 'CIO', link: '/succession/cio' },
-          { text: '투자MD',            link: '/succession/md' },
-          { text: 'AI혁신담당',            link: '/succession/caio' },
-          { text: 'AI/DT담당',             link: '/succession/aidt' },
-          { text: '정보보호담당',           link: '/succession/ciso' },
-          { text: '전략담당',              link: '/succession/cso' },
-          { text: '재무담당',              link: '/succession/cfo' },
-          { text: '법무담당',              link: '/succession/clo' },
-          { text: 'IR담당',                link: '/succession/ciro' },
-          { text: 'HR담당',                link: '/succession/chro' },
+          { text: '전체 심의 이력 →', link: '/succession/list' },
         ]
       },
       {
@@ -34,18 +25,9 @@ export default defineConfig({
     sidebar: {
       '/succession/': [
         {
-          text: '포지션별',
+          text: '심의 이력',
           items: [
-            { text: 'CIO', link: '/succession/cio' },
-            { text: '투자MD',            link: '/succession/md' },
-            { text: 'AI혁신담당',            link: '/succession/caio' },
-            { text: 'AI/DT담당',             link: '/succession/aidt' },
-            { text: '정보보호담당',           link: '/succession/ciso' },
-            { text: '전략담당',              link: '/succession/cso' },
-            { text: '재무담당',              link: '/succession/cfo' },
-            { text: '법무담당',              link: '/succession/clo' },
-            { text: 'IR담당',                link: '/succession/ciro' },
-            { text: 'HR담당',                link: '/succession/chro' },
+            { text: '전체 심의 이력 →', link: '/succession/list' },
           ]
         }
       ],
@@ -62,15 +44,15 @@ export default defineConfig({
           text: '포지션별 이사회 기록',
           items: [
             { text: 'CIO', link: '/succession/debate/cio' },
-            { text: '투자MD',            link: '/succession/debate/md' },
-            { text: 'AI혁신담당',            link: '/succession/debate/caio' },
-            { text: 'AI/DT담당',             link: '/succession/debate/aidt' },
-            { text: '정보보호담당',           link: '/succession/debate/ciso' },
-            { text: '전략담당',              link: '/succession/debate/cso' },
-            { text: '재무담당',              link: '/succession/debate/cfo' },
-            { text: '법무담당',              link: '/succession/debate/clo' },
-            { text: 'IR담당',                link: '/succession/debate/ciro' },
-            { text: 'HR담당',                link: '/succession/debate/chro' },
+            { text: '투자MD', link: '/succession/debate/md' },
+            { text: 'AI혁신담당', link: '/succession/debate/caio' },
+            { text: 'AI/DT담당', link: '/succession/debate/aidt' },
+            { text: '정보보호담당', link: '/succession/debate/ciso' },
+            { text: '전략담당', link: '/succession/debate/cso' },
+            { text: '재무담당', link: '/succession/debate/cfo' },
+            { text: '법무담당', link: '/succession/debate/clo' },
+            { text: 'IR담당', link: '/succession/debate/ciro' },
+            { text: 'HR담당', link: '/succession/debate/chro' },
           ]
         }
       ],
@@ -87,15 +69,15 @@ export default defineConfig({
           text: '포지션별 이사회 기록',
           items: [
             { text: 'CIO', link: '/succession/debate/cio' },
-            { text: '투자MD',            link: '/succession/debate/md' },
-            { text: 'AI혁신담당',            link: '/succession/debate/caio' },
-            { text: 'AI/DT담당',             link: '/succession/debate/aidt' },
-            { text: '정보보호담당',           link: '/succession/debate/ciso' },
-            { text: '전략담당',              link: '/succession/debate/cso' },
-            { text: '재무담당',              link: '/succession/debate/cfo' },
-            { text: '법무담당',              link: '/succession/debate/clo' },
-            { text: 'IR담당',                link: '/succession/debate/ciro' },
-            { text: 'HR담당',                link: '/succession/debate/chro' },
+            { text: '투자MD', link: '/succession/debate/md' },
+            { text: 'AI혁신담당', link: '/succession/debate/caio' },
+            { text: 'AI/DT담당', link: '/succession/debate/aidt' },
+            { text: '정보보호담당', link: '/succession/debate/ciso' },
+            { text: '전략담당', link: '/succession/debate/cso' },
+            { text: '재무담당', link: '/succession/debate/cfo' },
+            { text: '법무담당', link: '/succession/debate/clo' },
+            { text: 'IR담당', link: '/succession/debate/ciro' },
+            { text: 'HR담당', link: '/succession/debate/chro' },
           ]
         }
       ],
@@ -118,22 +100,23 @@ export default defineConfig({
           text: '에이전트 이사 (10인)',
           items: [
             { text: 'Jensen Huang', link: '/succession/members/vision-jensen' },
-            { text: 'Jeff Bezos',   link: '/succession/members/scale-bezos' },
+            { text: 'Jeff Bezos', link: '/succession/members/scale-bezos' },
             { text: 'Warren Buffett', link: '/succession/members/integrity-buffett' },
-            { text: 'Ray Dalio',    link: '/succession/members/principles-dalio' },
+            { text: 'Ray Dalio', link: '/succession/members/principles-dalio' },
             { text: 'Satya Nadella', link: '/succession/members/transform-nadella' },
-            { text: 'Cathie Wood',   link: '/succession/members/innovation-wood' },
-            { text: 'Jack Welch',   link: '/succession/members/performance-welch' },
+            { text: 'Cathie Wood', link: '/succession/members/innovation-wood' },
+            { text: 'Jack Welch', link: '/succession/members/performance-welch' },
             { text: 'Charlie Munger', link: '/succession/members/contraverse-munger' },
-            { text: 'Elon Musk',     link: '/succession/members/execution-musk' },
+            { text: 'Elon Musk', link: '/succession/members/execution-musk' },
             { text: 'Sheryl Sandberg', link: '/succession/members/lean-sandberg' },
           ]
         }
-      ],
+      ]
     },
+    aside: false,
     socialLinks: [],
     footer: {
-      message: '© 2026 Succession Agent · Powered by S',
+      copyright: '© 2026 Succession Agent · Powered by S'
     }
   }
 })
