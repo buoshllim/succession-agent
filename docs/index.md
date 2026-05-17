@@ -17,7 +17,7 @@ sidebar: false
       <span class="board-hero-icon">🏛️</span>
       <div class="board-hero-body">
         <div class="board-hero-title">이사회 현황</div>
-        <div class="board-hero-desc">10인 에이전트 이사 · 포지션별 최신 결의</div>
+        <div class="board-hero-desc">10인 에이전트 이사 · 최신 결의</div>
       </div>
       <span class="board-hero-arrow">→</span>
     </a>
