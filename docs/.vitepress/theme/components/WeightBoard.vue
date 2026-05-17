@@ -74,9 +74,9 @@
     </div>
 
     <!-- ── 국면 조정 요약 ── -->
-    <div v-if="Object.keys(combinedAdjust).length" class="wb-phase-adjust wb-phase-adjust--bottom">
-      <span v-for="(delta, key) in combinedAdjust" :key="key" class="wb-adjust-chip" :class="(delta as number) > 0 ? 'up' : 'down'">
-        {{ BOARD_NAMES[key as string] }} {{ (delta as number) > 0 ? '▲' : '▼' }}{{ Math.abs((delta as number) * 100).toFixed(0) }}%p
+    <div v-if="adjustChips.length" class="wb-phase-adjust wb-phase-adjust--bottom">
+      <span v-for="chip in adjustChips" :key="chip.key" class="wb-adjust-chip" :class="chip.delta > 0 ? 'up' : 'down'">
+        {{ BOARD_NAMES[chip.key] }} {{ chip.delta > 0 ? '▲' : '▼' }}{{ Math.abs(chip.delta * 100).toFixed(0) }}%p
       </span>
     </div>
 
@@ -175,6 +175,14 @@ const combinedAdjust = computed(() => {
 })
 
 const activePhases    = computed(() => PHASES.filter(p => phases.value.includes(p.id)))
+
+// 조정 chips: 0 제외, ▲ 내림차순 → ▼ 오름차순
+const adjustChips = computed(() =>
+  Object.entries(combinedAdjust.value)
+    .filter(([, v]) => Math.round(Math.abs(v) * 100) > 0)
+    .sort(([, a], [, b]) => b - a)
+    .map(([key, delta]) => ({ key, delta }))
+)
 const currentPosition = computed(() => POSITIONS.find(p => p.id === position.value)!)
 
 function togglePhase(id: string) {
@@ -320,6 +328,7 @@ const maxWeight = computed(() =>
   margin-top: 24px;
   padding-top: 20px;
   border-top: 1px solid var(--vp-c-divider);
+  gap: 8px;
 }
 .wb-adjust-chip {
   padding: 2px 8px;
