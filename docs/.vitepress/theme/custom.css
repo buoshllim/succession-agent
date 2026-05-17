@@ -315,7 +315,7 @@ body {
 
 /* ── 홈 커스텀 레이아웃 ── */
 
-/* 하단 좌우 분할 */
+/* 이사회 히어로 3열 — 모두 동일 너비·스타일 */
 .board-hero-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -324,6 +324,15 @@ body {
 
 .board-hero-row .board-hero-card {
   margin-bottom: 0;
+  background: var(--vp-c-bg);
+  border-color: var(--vp-c-divider);
+  border-width: 1.5px;
+}
+
+.board-hero-row .board-hero-card:hover {
+  background: var(--vp-c-bg-soft);
+  box-shadow: var(--vp-shadow-1);
+  border-color: var(--vp-c-text-3);
 }
 
 @media (max-width: 752px) {
@@ -374,9 +383,15 @@ body {
 }
 
 .home-wrap {
-  max-width: 752px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 32px 24px 0;
+  padding: 48px 48px 0;
+}
+
+@media (max-width: 768px) {
+  .home-wrap {
+    padding: 32px 24px 0;
+  }
 }
 
 .home-section {
@@ -409,8 +424,14 @@ body {
 
 .position-grid-home {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .position-grid-home {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 640px) {
