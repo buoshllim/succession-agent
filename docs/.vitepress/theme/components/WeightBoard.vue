@@ -60,7 +60,7 @@
               <div
                 class="wb-bar-fill"
                 :style="{ width: item.weight > 0 ? (item.weight / maxWeight * 100) + '%' : '0%',
-                          background: item.rank <= 3 && item.weight > 0 ? item.color : '#CBD5E1' }"
+                          background: item.weight === 0 ? '#CBD5E1' : item.rank <= 3 ? item.color : item.color + '55' }"
               ></div>
             </div>
             <div class="wb-bar-value" :class="{ zero: item.weight === 0 }">
