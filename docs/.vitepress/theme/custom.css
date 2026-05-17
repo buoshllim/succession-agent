@@ -400,6 +400,18 @@ body {
   }
 }
 
+.position-grid-home {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  .position-grid-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .stock-card-home {
   display: flex;
   flex-direction: column;

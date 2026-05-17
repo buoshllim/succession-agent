@@ -7,7 +7,7 @@ sidebar: false
 
 <div class="home-wrap">
 
-<!-- ── 에이전트 이사회 (최상단, 버튼 2개 가로) ── -->
+<!-- ── 에이전트 이사회 ── -->
 <div class="home-section">
   <div class="section-header">
     <span class="section-label">에이전트 이사회</span>
@@ -32,64 +32,55 @@ sidebar: false
   </div>
 </div>
 
-<!-- ── 하단 좌우 분할 ── -->
-<div class="home-split">
-
-  <!-- 좌: 포지션별 심의 -->
-  <div class="home-split-col">
-    <div class="section-header">
-      <span class="section-label">포지션별 심의</span>
-    </div>
-    <div class="stock-grid-home">
-      <a href="/succession/list?position=cio" class="stock-card-home">
-        <span class="stock-name">CIO</span>
-        <span class="stock-ticker">최고투자책임자</span>
-      </a>
-      <a href="/succession/list?position=md" class="stock-card-home">
-        <span class="stock-name">투자MD</span>
-        <span class="stock-ticker">투자본부 MD</span>
-      </a>
-      <a href="/succession/list?position=caio" class="stock-card-home">
-        <span class="stock-name">AI혁신담당</span>
-        <span class="stock-ticker">CAIO</span>
-      </a>
-      <a href="/succession/list?position=aidt" class="stock-card-home">
-        <span class="stock-name">AI/DT담당</span>
-        <span class="stock-ticker">디지털전환</span>
-      </a>
-      <a href="/succession/list?position=ciso" class="stock-card-home">
-        <span class="stock-name">정보보호담당</span>
-        <span class="stock-ticker">CISO</span>
-      </a>
-      <a href="/succession/list?position=cso" class="stock-card-home">
-        <span class="stock-name">전략담당</span>
-        <span class="stock-ticker">CSO</span>
-      </a>
-      <a href="/succession/list?position=cfo" class="stock-card-home">
-        <span class="stock-name">재무담당</span>
-        <span class="stock-ticker">CFO</span>
-      </a>
-      <a href="/succession/list?position=clo" class="stock-card-home">
-        <span class="stock-name">법무담당</span>
-        <span class="stock-ticker">CLO</span>
-      </a>
-      <a href="/succession/list?position=ciro" class="stock-card-home">
-        <span class="stock-name">IR담당</span>
-        <span class="stock-ticker">CIRO</span>
-      </a>
-      <a href="/succession/list?position=chro" class="stock-card-home">
-        <span class="stock-name">HR담당</span>
-        <span class="stock-ticker">CHRO</span>
-      </a>
-    </div>
+<!-- ── 포지션별 심의 ── -->
+<div class="home-section">
+  <div class="section-header">
+    <span class="section-label">포지션별 심의</span>
   </div>
-
-  <!-- 우: 심의 이력 -->
-  <div class="home-split-col">
-    <div class="section-header">
-      <span class="section-label">심의 이력</span>
-    </div>
-    <a href="/succession/list" class="board-hero-card board-hero-card--secondary" style="margin-top:0">
+  <div class="position-grid-home">
+    <a href="/succession/list?position=cio" class="stock-card-home">
+      <span class="stock-name">CIO</span>
+      <span class="stock-ticker">최고투자책임자</span>
+    </a>
+    <a href="/succession/list?position=md" class="stock-card-home">
+      <span class="stock-name">투자MD</span>
+      <span class="stock-ticker">투자본부 MD</span>
+    </a>
+    <a href="/succession/list?position=caio" class="stock-card-home">
+      <span class="stock-name">AI혁신담당</span>
+      <span class="stock-ticker">CAIO</span>
+    </a>
+    <a href="/succession/list?position=aidt" class="stock-card-home">
+      <span class="stock-name">AI/DT담당</span>
+      <span class="stock-ticker">디지털전환</span>
+    </a>
+    <a href="/succession/list?position=ciso" class="stock-card-home">
+      <span class="stock-name">정보보호담당</span>
+      <span class="stock-ticker">CISO</span>
+    </a>
+    <a href="/succession/list?position=cso" class="stock-card-home">
+      <span class="stock-name">전략담당</span>
+      <span class="stock-ticker">CSO</span>
+    </a>
+    <a href="/succession/list?position=cfo" class="stock-card-home">
+      <span class="stock-name">재무담당</span>
+      <span class="stock-ticker">CFO</span>
+    </a>
+    <a href="/succession/list?position=clo" class="stock-card-home">
+      <span class="stock-name">법무담당</span>
+      <span class="stock-ticker">CLO</span>
+    </a>
+    <a href="/succession/list?position=ciro" class="stock-card-home">
+      <span class="stock-name">IR담당</span>
+      <span class="stock-ticker">CIRO</span>
+    </a>
+    <a href="/succession/list?position=chro" class="stock-card-home">
+      <span class="stock-name">HR담당</span>
+      <span class="stock-ticker">CHRO</span>
+    </a>
+  </div>
+  <div style="margin-top: 12px;">
+    <a href="/succession/list" class="board-hero-card board-hero-card--secondary">
       <span class="board-hero-icon">📋</span>
       <div class="board-hero-body">
         <div class="board-hero-title">전체 심의 이력</div>
@@ -98,7 +89,6 @@ sidebar: false
       <span class="board-hero-arrow">→</span>
     </a>
   </div>
-
 </div>
 
 </div>
