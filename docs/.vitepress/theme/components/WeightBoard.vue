@@ -327,14 +327,16 @@ const maxWeight = computed(() =>
 .wb-phase-adjust--bottom {
   margin-top: 24px;
   padding-top: 20px;
+  padding-bottom: 4px;
   border-top: 1px solid var(--vp-c-divider);
   gap: 8px;
 }
 .wb-adjust-chip {
-  padding: 2px 8px;
-  border-radius: 8px;
-  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
   font-weight: 600;
+  line-height: 1.4;
 }
 .wb-adjust-chip.up   { background: #DCFCE7; color: #166534; }
 .wb-adjust-chip.down { background: #FEE2E2; color: #991B1B; }
