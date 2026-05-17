@@ -44,7 +44,7 @@ sidebar: false
     </a>
     <a href="/succession/list?position=md" class="stock-card-home">
       <span class="stock-name">투자MD</span>
-      <span class="stock-ticker">투자본부 MD</span>
+      <span class="stock-ticker">투자센터 MD</span>
     </a>
     <a href="/succession/list?position=caio" class="stock-card-home">
       <span class="stock-name">AI혁신담당</span>

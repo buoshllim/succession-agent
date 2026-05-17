@@ -31,7 +31,7 @@ aside: false
   <div class="position-card">
     <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
     <div class="position-card-name">투자MD</div>
-    <div class="position-card-role">투자본부 MD</div>
+    <div class="position-card-role">투자센터 MD</div>
     <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
     <div class="position-card-date">심의 기록 없음</div>
     <div class="position-card-footer"><a href="/succession/debate/md" class="position-btn">💬 회의록</a><a href="/succession/debate/md" class="position-btn">📋 이력</a></div>
