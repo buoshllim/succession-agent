@@ -149,7 +149,7 @@ const BOARD_META: Record<string, { name: string; color: string }> = {
   'transform-nadella':  { name: 'Transform · Nadella', color: '#00A4EF' },
   'innovation-wood':    { name: 'Innovation · Wood',   color: '#7C3AED' },
   'performance-welch':  { name: 'Performance · Welch', color: '#059669' },
-  'contraverse-munger': { name: 'Contraverse · Munger', color: '#D97706' },
+  'contraverse-munger': { name: 'Inversion · Munger', color: '#D97706' },
   'execution-musk':     { name: 'Execution · Musk',   color: '#DC2626' },
   'lean-sandberg':      { name: 'Lean · Sandberg',     color: '#14B8A6' },
 }
