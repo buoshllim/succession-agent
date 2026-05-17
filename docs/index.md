@@ -1,126 +1,104 @@
 ---
-layout: home
-hero:
-  name: Succession Agent
-  tagline: AI 이사회가 C-Suite 후보자를 심의합니다
-  actions:
-    - theme: brand
-      text: 이사회 현황 →
-      link: /succession/board/
-    - theme: alt
-      text: 전체 심의 이력
-      link: /succession/list
+title: Succession Agent
+layout: page
+aside: false
+sidebar: false
 ---
 
+<div class="home-wrap">
+
+<!-- ── 에이전트 이사회 (최상단, 버튼 2개 가로) ── -->
 <div class="home-section">
-  <div class="home-section-header">
-    <h2>🏛️ 에이전트 이사회</h2>
-    <div class="home-section-links">
-      <a href="/succession/board/" class="home-link-btn">이사회 현황</a>
-      <a href="/succession/members/" class="home-link-btn">이사회 멤버</a>
-    </div>
+  <div class="section-header">
+    <span class="section-label">에이전트 이사회</span>
   </div>
-  <p class="home-section-desc">10인 에이전트 이사가 다면 심의를 통해 C-Suite 포지션별 후보 준비도를 평가합니다.</p>
+  <div class="board-hero-row">
+    <a href="/succession/board/" class="board-hero-card">
+      <span class="board-hero-icon">🏛️</span>
+      <div class="board-hero-body">
+        <div class="board-hero-title">이사회 현황</div>
+        <div class="board-hero-desc">10인 에이전트 이사 · 포지션별 최신 결의</div>
+      </div>
+      <span class="board-hero-arrow">→</span>
+    </a>
+    <a href="/succession/members/" class="board-hero-card board-hero-card--secondary">
+      <span class="board-hero-icon">👥</span>
+      <div class="board-hero-body">
+        <div class="board-hero-title">이사회 멤버</div>
+        <div class="board-hero-desc">10인 이사 · 의장 소개</div>
+      </div>
+      <span class="board-hero-arrow">→</span>
+    </a>
+  </div>
 </div>
 
-<div class="home-section">
-  <h2>📋 포지션별 최신 결의</h2>
-  <div class="position-card-grid">
-    <div class="position-card">
-      <div class="position-card-header">
-        <span class="readiness-pill pending">⬜ 심의 대기</span>
-      </div>
-      <div class="position-card-name">CIO</div>
-      <div class="position-card-role">최고투자책임자</div>
-      <div class="readiness-wrap">
-        <div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div>
-        <span class="readiness-val">—</span>
-      </div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer">
-        <a href="/succession/debate/cio" class="position-btn">💬 회의록</a>
-        <a href="/succession/board/" class="position-btn">📋 현황</a>
-      </div>
+<!-- ── 하단 좌우 분할 ── -->
+<div class="home-split">
+
+  <!-- 좌: 포지션별 심의 -->
+  <div class="home-split-col">
+    <div class="section-header">
+      <span class="section-label">포지션별 심의</span>
     </div>
-    <div class="position-card">
-      <div class="position-card-header">
-        <span class="readiness-pill pending">⬜ 심의 대기</span>
-      </div>
-      <div class="position-card-name">투자MD</div>
-      <div class="position-card-role">투자본부 MD</div>
-      <div class="readiness-wrap">
-        <div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div>
-        <span class="readiness-val">—</span>
-      </div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer">
-        <a href="/succession/debate/md" class="position-btn">💬 회의록</a>
-        <a href="/succession/board/" class="position-btn">📋 현황</a>
-      </div>
-    </div>
-    <div class="position-card">
-      <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
-      <div class="position-card-name">AI혁신담당</div>
-      <div class="position-card-role">Chief AI Innovation Officer</div>
-      <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer"><a href="/succession/debate/caio" class="position-btn">💬 회의록</a><a href="/succession/board/" class="position-btn">📋 현황</a></div>
-    </div>
-    <div class="position-card">
-      <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
-      <div class="position-card-name">AI/DT담당</div>
-      <div class="position-card-role">AI·디지털전환 총괄</div>
-      <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer"><a href="/succession/debate/aidt" class="position-btn">💬 회의록</a><a href="/succession/board/" class="position-btn">📋 현황</a></div>
-    </div>
-    <div class="position-card">
-      <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
-      <div class="position-card-name">정보보호담당</div>
-      <div class="position-card-role">Chief Information Security Officer</div>
-      <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer"><a href="/succession/debate/ciso" class="position-btn">💬 회의록</a><a href="/succession/board/" class="position-btn">📋 현황</a></div>
-    </div>
-    <div class="position-card">
-      <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
-      <div class="position-card-name">전략담당</div>
-      <div class="position-card-role">Chief Strategy Officer</div>
-      <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer"><a href="/succession/debate/cso" class="position-btn">💬 회의록</a><a href="/succession/board/" class="position-btn">📋 현황</a></div>
-    </div>
-    <div class="position-card">
-      <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
-      <div class="position-card-name">재무담당</div>
-      <div class="position-card-role">Chief Financial Officer</div>
-      <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer"><a href="/succession/debate/cfo" class="position-btn">💬 회의록</a><a href="/succession/board/" class="position-btn">📋 현황</a></div>
-    </div>
-    <div class="position-card">
-      <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
-      <div class="position-card-name">법무담당</div>
-      <div class="position-card-role">Chief Legal Officer</div>
-      <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer"><a href="/succession/debate/clo" class="position-btn">💬 회의록</a><a href="/succession/board/" class="position-btn">📋 현황</a></div>
-    </div>
-    <div class="position-card">
-      <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
-      <div class="position-card-name">IR담당</div>
-      <div class="position-card-role">Chief Investor Relations Officer</div>
-      <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer"><a href="/succession/debate/ciro" class="position-btn">💬 회의록</a><a href="/succession/board/" class="position-btn">📋 현황</a></div>
-    </div>
-    <div class="position-card">
-      <div class="position-card-header"><span class="readiness-pill pending">⬜ 심의 대기</span></div>
-      <div class="position-card-name">HR담당</div>
-      <div class="position-card-role">Chief Human Resources Officer</div>
-      <div class="readiness-wrap"><div class="readiness-bar" style="flex:1"><div class="readiness-bar-fill" style="width:0%"></div></div><span class="readiness-val">—</span></div>
-      <div class="position-card-date">심의 기록 없음</div>
-      <div class="position-card-footer"><a href="/succession/debate/chro" class="position-btn">💬 회의록</a><a href="/succession/board/" class="position-btn">📋 현황</a></div>
+    <div class="stock-grid-home">
+      <a href="/succession/list?position=cio" class="stock-card-home">
+        <span class="stock-name">CIO</span>
+        <span class="stock-ticker">최고투자책임자</span>
+      </a>
+      <a href="/succession/list?position=md" class="stock-card-home">
+        <span class="stock-name">투자MD</span>
+        <span class="stock-ticker">투자본부 MD</span>
+      </a>
+      <a href="/succession/list?position=caio" class="stock-card-home">
+        <span class="stock-name">AI혁신담당</span>
+        <span class="stock-ticker">CAIO</span>
+      </a>
+      <a href="/succession/list?position=aidt" class="stock-card-home">
+        <span class="stock-name">AI/DT담당</span>
+        <span class="stock-ticker">디지털전환</span>
+      </a>
+      <a href="/succession/list?position=ciso" class="stock-card-home">
+        <span class="stock-name">정보보호담당</span>
+        <span class="stock-ticker">CISO</span>
+      </a>
+      <a href="/succession/list?position=cso" class="stock-card-home">
+        <span class="stock-name">전략담당</span>
+        <span class="stock-ticker">CSO</span>
+      </a>
+      <a href="/succession/list?position=cfo" class="stock-card-home">
+        <span class="stock-name">재무담당</span>
+        <span class="stock-ticker">CFO</span>
+      </a>
+      <a href="/succession/list?position=clo" class="stock-card-home">
+        <span class="stock-name">법무담당</span>
+        <span class="stock-ticker">CLO</span>
+      </a>
+      <a href="/succession/list?position=ciro" class="stock-card-home">
+        <span class="stock-name">IR담당</span>
+        <span class="stock-ticker">CIRO</span>
+      </a>
+      <a href="/succession/list?position=chro" class="stock-card-home">
+        <span class="stock-name">HR담당</span>
+        <span class="stock-ticker">CHRO</span>
+      </a>
     </div>
   </div>
+
+  <!-- 우: 심의 이력 -->
+  <div class="home-split-col">
+    <div class="section-header">
+      <span class="section-label">심의 이력</span>
+    </div>
+    <a href="/succession/list" class="board-hero-card board-hero-card--secondary" style="margin-top:0">
+      <span class="board-hero-icon">📋</span>
+      <div class="board-hero-body">
+        <div class="board-hero-title">전체 심의 이력</div>
+        <div class="board-hero-desc">포지션별 심의 기록 전체 보기</div>
+      </div>
+      <span class="board-hero-arrow">→</span>
+    </a>
+  </div>
+
+</div>
+
 </div>
