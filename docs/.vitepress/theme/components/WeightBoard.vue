@@ -325,9 +325,8 @@ const maxWeight = computed(() =>
   min-height: 24px;
 }
 .wb-phase-adjust--bottom {
-  margin-top: 24px;
-  padding-top: 20px;
-  padding-bottom: 4px;
+  margin-top: 0;
+  padding: 20px 24px 20px;
   border-top: 1px solid var(--vp-c-divider);
   gap: 8px;
 }
