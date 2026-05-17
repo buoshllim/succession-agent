@@ -13,6 +13,7 @@
           @click="togglePhase(p.id)"
         >{{ p.label }}</button>
       </div>
+      <div class="wb-phase-divider"></div>
       <div v-for="p in activePhases" :key="p.id" class="wb-phase-desc">
         <span class="wb-phase-badge" :style="{ background: p.color + '22', color: p.color }">
           {{ p.label }}
