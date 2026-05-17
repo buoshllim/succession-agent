@@ -29,6 +29,7 @@
     </div>
 
     <!-- ── 포지션 탭 ── -->
+    <div class="wb-pos-tabs-wrap">
     <div class="wb-pos-tabs">
       <button
         v-for="p in POSITIONS" :key="p.id"
@@ -36,6 +37,7 @@
         :class="{ active: position === p.id }"
         @click="position = p.id"
       >{{ p.label }}</button>
+    </div>
     </div>
 
     <!-- ── 포지션 내용 ── -->
@@ -323,12 +325,31 @@ const maxWeight = computed(() =>
 .wb-adjust-chip.down { background: #FEE2E2; color: #991B1B; }
 
 /* ── 포지션 탭 ── */
+.wb-pos-tabs-wrap {
+  position: relative;
+  background: var(--vp-c-bg);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.wb-pos-tabs-wrap::after {
+  content: '›';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: linear-gradient(to right, transparent, var(--vp-c-bg) 70%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  font-size: 18px;
+  color: var(--vp-c-text-3);
+  pointer-events: none;
+}
 .wb-pos-tabs {
   display: flex;
   padding: 12px 16px 0;
   gap: 4px;
-  background: var(--vp-c-bg);
-  border-bottom: 1px solid var(--vp-c-divider);
   overflow-x: auto;
   scrollbar-width: none;
 }
